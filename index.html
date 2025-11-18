@@ -8,21 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W77JBH4NHE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W77JBH4NHE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-W77JBH4NHE');
-</script>
+    gtag('config', 'G-W77JBH4NHE');
+  </script>
 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T3WRXWGZ');</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T3WRXWGZ');</script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -41,21 +41,21 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
+  <!-- Simple utility styles reused across sections -->
   <style>
-    /* Define a CSS class for your section with a specific background color */
     .colored-section {
-      background-color: #F8F8F8; /* Replace with your desired color code or name */
-      padding: 20px; /* Optional: Add padding for better spacing */
+      background-color: #F8F8F8;
+      padding: 20px;
     }
 
     .colored-section2 {
-      background-color: #f3ebde; /* Replace with your desired color code or name */
-      padding: 20px; /* Optional: Add padding for better spacing */
+      background-color: #f3ebde;
+      padding: 20px;
     }
 
     .colored-section3 {
-      background-color: #f0eeee; /* Replace with your desired color code or name */
-      padding: 20px; /* Optional: Add padding for better spacing */
+      background-color: #f0eeee;
+      padding: 20px;
     }
 
     ol {
@@ -117,13 +117,45 @@
       text-align: center;
       margin-bottom: 10px; /* Space between caption and image */
       font-weight: bold;
+      margin-top: 8px;
     }
 
-    /* Image style */
+    .figure-item img {
+      height: 220px;
+      width: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .centered-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     .interpolation-image {
       width: 300px; /* Fixed width as requested */
       display: block;
       margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .wide-figure {
+      width: 100%;
+      max-width: 1400px;   /* Increase max width */
+      margin: 0 auto;       /* Center it */
+    }
+
+    .middle-figure-80 {
+      width: 80%;
+      max-width: 1400px;   /* Increase max width */
+      margin: 0 auto;       /* Center it */
+    }
+
+    .middle-figure-60 {
+      width: 60%;
+      max-width: 1400px;   /* Increase max width */
+      margin: 0 auto;       /* Center it */
     }
   </style>
 
@@ -219,28 +251,28 @@
 
   <style>
     .dropdown {
-        max-width: 600px;
-        margin: 20px auto;
-        border-radius: 12px;
-        border: 1px solid #ccc;
-        background-color: #f0f0f0;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 20px auto;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .dropdown-header {
-        padding: 10px 15px;
-        cursor: pointer;
-        font-weight: bold;
-        background-color: #e0e0e0;
-        border-radius: 12px 12px 0 0;
-        display: flex;
-        align-items: center;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #e0e0e0;
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      align-items: center;
     }
 
     .dropdown-header::before {
         content: '\25BC'; /* Downward triangle */
-        margin-right: 10px;
-        transition: transform 0.3s ease;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
     }
 
     .dropdown.open .dropdown-header::before {
@@ -248,33 +280,45 @@
     }
 
     .dropdown-content {
-        display: none;
-        padding: 15px;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 14px;
-        white-space: pre-wrap;
-        color: #333;
+      display: none;
+      padding: 15px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      white-space: pre-wrap;
+      color: #333;
     }
 
     .dropdown.open .dropdown-content {
-        display: block;
+      display: block;
+    }
+
+    /* Small utility for horizontal figure rows */
+    .figure-row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 20px;
     }
   </style>
+
   <script>
     function toggleDropdown() {
-        const dropdown = document.getElementById('gpt4o-dropdown');
-        dropdown.classList.toggle('open');
+      const dropdown = document.getElementById('gpt4o-dropdown');
+      dropdown.classList.toggle('open');
     }
   </script>
 
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
-
 </head>
 
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRXWGZ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRXWGZ"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
 <body onload="updateSingleVideo(); updateQpredVideo();">
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -285,23 +329,24 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-
 </nav>
 
+<!-- ===================== HERO ===================== -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Masked Inverse Reinforcement Learning for Language Conditioned Reward Learning</h1>
+          <h1 class="title is-1 publication-title">
+            Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language
+          </h1>
+
           <div class="is-size-5 publication-authors">
             <span class="author-block"><a target="_blank" href="https://minyoung1005.github.io/">Minyoung Hwang</a><sup>1</sup>,</span>
             <span class="author-block"><a target="_blank" href="">Alexandra Forsey-Smerek</a><sup>1</sup>,</span>
             <span class="author-block"><a target="_blank" href="https://ndennler.github.io/">Nathaniel Dennler</a><sup>1</sup>,</span>
-            <span class="author-block"><a target="_blank" href="https://www.mit.edu/~abobu/">Andreea Bobu</a><sup>1</sup>,</span>
+            <span class="author-block"><a target="_blank" href="https://www.mit.edu/~abobu/">Andreea Bobu</a><sup>1</sup></span>
           </div>
-
-
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>MIT CSAIL</span>
@@ -336,6 +381,7 @@
   </div>
 </section>
 
+<!-- ===================== TEASER VIDEO ===================== -->
 <section class="hero teaser">
   <div class="container is-fullhd">
     <div class="hero-body">
@@ -343,422 +389,331 @@
         <div class="columns is-vcentered is-centered">
           <br>
           <video id="teaser" autoplay muted loop width="800" height="100%">
-            <source src="media/zoom_out_video_compressed.mp4"
-                    type="video/mp4">
+            <source src="media/masked_irl_teaser.mp4" type="video/mp4">
           </video>
-
         </div>
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf2"> 
-            How can robots learn reward functions that capture true human preferences when <font color="#9900FF">demonstrations are ambiguous?</font>
-        </span>
+          <span>
+            How can robots learn reward functions that capture true human preferences when
+            <font color="#9900FF">demonstrations and instructions are ambiguous?</font>
+          </span>
         </h2>
       </div>
     </div>
   </div>
 </section>
 
-
+<!-- ===================== ABSTRACT ===================== -->
 <section class="colored-section">
   <div class="container is-max-desktop is-full-fullhd">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <br/>
           <p>
-            Robots can adapt to user preferences by learning reward functions from demonstrations, but with limited data, reward models often overfit to spurious correlations and fail to generalize. Demonstrations often show how to do a task, not what matters for the task, leading the model to fixate on irrelevant state details. Natural language can more directly specify what the robot should focus on, and, in principle, help disambiguate between many reward functions consistent with the demonstrations. However, existing language-conditioned reward learning methods typically treat instructions as simple conditioning signals, without fully exploiting their potential to resolve ambiguity. Moreover, real instructions are often ambiguous themselves, so naive conditioning is unreliable. Our key insight is that these two input types carry complementary information: demonstrations show how to act, while language specifies what is important. We propose Masked Inverse Reinforcement Learning (Masked IRL), a framework that uses large language models (LLMs) to combine the strengths of both input types. Masked IRL infers state-relevance masks from language instructions and enforces invariance to irrelevant state components. When instructions are ambiguous, it uses LLM reasoning to clarify them in the context of the demonstrations. In simulation and on a real robot, Masked IRL outperforms prior language-conditioned IRL methods by up to 15% while using up to 4.7 times less data, demonstrating improved sample-efficiency, generalization, and robustness to ambiguous language.
+            Robots can adapt to user preferences by learning reward functions from demonstrations, but with limited data, reward models often overfit to spurious correlations and fail to generalize. 
+This happens because demonstrations show robots how to do a task but not what matters for that task, causing the model to focus on irrelevant state details.
+Natural language can more directly specify what the robot should focus on, and, in principle, disambiguate between many reward functions consistent with the demonstrations. However, existing language-conditioned reward learning methods typically treat instructions as simple conditioning signals, without fully exploiting their potential to resolve ambiguity. Moreover, real instructions are often ambiguous themselves, so naive conditioning is unreliable. Our key insight is that these two input types carry complementary information: demonstrations show <emph>how</emph> to act, while language specifies <emph>what</emph> is important. We propose <strong>Masked Inverse Reinforcement Learning (Masked IRL)</strong>, a framework that uses large language models (LLMs) to combine the strengths of both input types. Masked IRL infers state-relevance masks from language instructions and enforces invariance to irrelevant state components. When instructions are ambiguous, it uses LLM reasoning to clarify them in the context of the demonstrations. In simulation and on a real robot, Masked IRL outperforms prior language-conditioned IRL methods by up to 15% while using up to 4.7 times less data, demonstrating improved sample-efficiency, generalization, and robustness to ambiguous language.
           </p>
         </div>
       </div>
     </div>
     <br>
   </div>
-
-
 </section>
 
+<!-- ===================== METHOD OVERVIEW ===================== -->
 <section class="section">
   <div class="container is-max-widescreen">
-
     <div class="rows">
+      <div class="row is-full-width">
+        <h2 class="title is-3">Method: Masked Inverse Reinforcement Learning</h2>
 
-<style>
-  .centered-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+        <!-- Method text (full width) -->
+        <div class="content">
+          <p>
+            Masked IRL is a language-conditioned reward learning framework that reasons jointly
+            over language and demonstrations. Given an ambiguous instruction and a user
+            demonstration, an LLM first disambiguates the language in the context of a reference
+            (shortest-path) trajectory. The clarified instruction is then passed to a second LLM
+            that predicts which state dimensions are relevant for that preference, producing a
+            binary state relevance mask.
+          </p>
+          <p>
+            Instead of explicitly zeroing out masked dimensions, Masked IRL applies an
+            <strong>implicit masking loss</strong>: it perturbs irrelevant state dimensions with random noise
+            and penalizes changes in the predicted reward. This drives the reward model to become
+            invariant to irrelevant features while remaining sensitive to the parts of the state that
+            language indicates matter for the task. The overall objective combines a standard
+            Maximum Entropy IRL loss with this masking loss.
+          </p>
+          <p>
+            At test time, the reward model takes a new instruction and state as input and implicitly
+            infers which state components are important through its language-conditioned architecture,
+            enabling trajectory optimization for novel language-specified preferences.
+          </p>
+        </div>
 
-  .interpolation-image {
-    display: block;
-    margin: 20px 0;  /* Give some space above and below the image */
-  }
-</style>
-
-<section>
-  <div class="rows">
-    <div class="row is-full-width">
-      <h2 class="title is-3"><span class="dperact">Language-Conditioned Reward Learning</span></h2>
-      <p>The dataset contains 653 human and 369 robot demonstrations across 13 task categories. For each trajectory, we collect the RGBD image observations, optical flow, single keypoint tracking, and annotate task and motion descriptions. For robot demonstrations, joint states are also in the dataset. In the following examples, task descriptions are written in white and motion descriptions are written in <font color="#ff9900">orange</font>.</p>
-      <br>
-
-      <h3 class="title is-4">Robot Demonstrations</h3>
-
-      <h4 class="title is-5">➤ Non-Interactive Tasks</h3>
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="3">
-            <div class="item">
-              <video poster="" autoplay muted loop height="100%">
-                <source src="media/idx48_traj180.mp4"
-                        type="video/mp4">
-              </video>
-              <div class="caption">"deliver lemonade"<br><font color="#ff9900">"move in the shortest path"</font></div>
-            </div>
-            <div class="item">
-              <video poster="" autoplay muted loop height="100%">
-                <source src="media/traj72.mp4"
-                        type="video/mp4">
-              </video>
-              <div class="caption">"draw path"<br><font color="#ff9900">"move to the right while making vertical oscillations"</font></div>
-            </div>
-            <div class="item">
-              <video poster="" autoplay muted loop height="100%">
-                <source src="media/traj88.mp4"
-                        type="video/mp4">
-              </video>
-              <div class="caption">"draw path"<br><font color="#ff9900">"make a triangular motion clockwise"</font></div>
-            </div>
-            <div class="item">
-              <video poster="" autoplay muted loop height="100%">
-                <source src="media/traj88.mp4"
-                        type="video/mp4">
-              </video>
-              <div class="caption">"draw path"<br><font color="#ff9900">"make a triangular motion clockwise"</font></div>
-            </div>
+        <!-- Full-width system architecture figure -->
+        <div class="centered-container">
+          <img src="media/system_overview.png"
+               class="interpolation-image wide-figure"
+               alt="Overview of the Masked IRL pipeline.">
+          <div class="figure-caption">
+            System overview of Masked IRL: LLM-based language disambiguation, state mask prediction,
+            masking loss, and trajectory optimization.
           </div>
         </div>
-        <br><br>
 
-      <h3 class="title is-4">Various Visual Motion Representations</h3>
-        <div class="figure-container">
-
-          <div class="figure-row">
-              <div class="figure-item">
-                  <img src="media/traj135.jpg" alt="Single Keypoint">
-                  <div class="figure-caption">Single Keypoint</div>
-              </div>
-              <div class="figure-item">
-                  <img src="media/traj135_optical_flow.jpg" alt="Optical Flow">
-                  <div class="figure-caption">Optical Flow</div>
-              </div>
-              <div class="figure-item">
-                <img src="media/traj135_1x2_cropped.jpg" alt="Optical Flow">
-                <div class="figure-caption">2-frame Storyboard</div>
-              </div>
-              <div class="figure-item">
-                <img src="media/traj135_2x2_storyboard_cropped.jpg" alt="Optical Flow">
-                <div class="figure-caption">4-frame Storyboard</div>
-              </div>
-              </div>
-
-      <br><br>
-      
-
-      <h3 class="title is-4">Grounded Motion Annotations</h3>
-      <table style="border-collapse: collapse; width: 100%;">
-        <thead>
-            <tr>
-                <th rowspan="2" style="border: 1px solid black; padding: 8px;">Category</th>
-                <th rowspan="2" style="border: 1px solid black; padding: 8px;">Task</th>
-                <th rowspan="2" style="border: 1px solid black; padding: 8px;">Motion Description Examples</th>
-                <th colspan="2" style="border: 1px solid black; padding: 8px;">Demonstrations</th>
-            </tr>
-            <tr>
-                <th style="border: 1px solid black; padding: 8px;">Human</th>
-                <th style="border: 1px solid black; padding: 8px;">Robot</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3" style="border: 1px solid black; padding: 8px;">Non-Interactive</td>
-                <td style="border: 1px solid black; padding: 8px;">Outdoor Navigation</td>
-                <td style="border: 1px solid black; padding: 8px;">move in the shortest path<br>make a detour to the left and follow the walkway, avoiding moving over the grass</td>
-                <td style="border: 1px solid black; padding: 8px;">-</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Indoor Navigation</td>
-                <td style="border: 1px solid black; padding: 8px;">move in the shortest path<br>make a detour to the right of the long table, avoiding collision with chairs</td>
-                <td style="border: 1px solid black; padding: 8px;">-</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Draw Path</td>
-                <td style="border: 1px solid black; padding: 8px;">make a triangular motion clockwise<br>move upward and to the right</td>
-                <td style="border: 1px solid black; padding: 8px;">-</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td rowspan="6" style="border: 1px solid black; padding: 8px;">Object-Interactive</td>
-                <td style="border: 1px solid black; padding: 8px;">Shake</td>
-                <td style="border: 1px solid black; padding: 8px;">move up and down 4 times<br>completely flip the object to the right and flip it back to its initial state</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Pick and place</td>
-                <td style="border: 1px solid black; padding: 8px;">move downward and to the left<br>move downward while getting farther from &lt;obstacle&gt;, then move to the left</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Stir</td>
-                <td style="border: 1px solid black; padding: 8px;">make 2 circular motions counter-clockwise<br>move upward, then move downward while making diagonal oscillations</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Wipe</td>
-                <td style="border: 1px solid black; padding: 8px;">move to the right and move to the left, repeating this sequence 2 times<br>move to the right, making diagonal oscillations</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Open/Close the cabinet</td>
-                <td style="border: 1px solid black; padding: 8px;">move to the right<br>move upward and to the left</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;">-</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Spread Condiment</td>
-                <td style="border: 1px solid black; padding: 8px;">move to the left and to the right<br>move to the left while making back and forth oscillations</td>
-                <td style="border: 1px solid black; padding: 8px;">-</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td rowspan="4" style="border: 1px solid black; padding: 8px;">User-Interactive</td>
-                <td style="border: 1px solid black; padding: 8px;">Handover</td>
-                <td style="border: 1px solid black; padding: 8px;">move upward and to the left<br>move downward and to the right following a concave curve</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;">-</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Brush hair</td>
-                <td style="border: 1px solid black; padding: 8px;">move downward while making horizontal oscillations<br>make 5 strokes downward, increasing the starting height of each stroke</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Tidy hair</td>
-                <td style="border: 1px solid black; padding: 8px;">move downward and to the right following a convex curve<br>make a circular motion clockwise, move upward, then move downward and to the right</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Style hair</td>
-                <td style="border: 1px solid black; padding: 8px;">move to the right shortly, then move to the left following a concave curve<br>make a circular motion clockwise, gradually increasing the radius of the circle</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
-            </tr>
-        </tbody>
-    </table>    
-
-      <!-- <div class="columns is-vcentered is-centered">
-        <br>
-        <img src="media/app_table_1.png" class="interpolation-image" alt="Interpolate start reference image." style="width: 100%;" />
-      </div> -->
-      <br>
-
-      <p>
-        <span class="dnerf2">App. Table 1. <b>List of Tasks and Motion Descriptions.</b> The collected dataset contains 653 human and 369 robot demonstrations
-          across 13 task categories, 36 task instructions, and 239 motion descriptions. Checkmarks denote which agent (human/robot)
-          demonstrations exist for each task. The table provides two motion description examples for each task.
-      </span>
-      </p>
-
+      </div>
     </div>
-  <!-- </div> -->
-<!-- </section>
+  </div>
+</section>
 
-<section> -->
 
-  <br><br>
-  
-  <div class="rows">
-    <div class="row is-full-width">
-      <h2 class="title is-3"><span class="dperact">Results</span></h2>
-      <h3 class="title is-4 ">How does MotIF compare to state-of-the-art VLMs?</h3>
+<!-- ===================== EXPERIMENTS ===================== -->
+<section class="section" id="experiments">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3">Experiments</h2>
 
-      <!-- <p>
-        aa
-      </p>
-      <br> -->
+    <!-- RQ1: Efficiency of the Masking Loss -->
+    <h3 class="title is-4">RQ1: Efficiency of the Masking Loss (Simulation)</h3>
+    <p>
+      We first evaluate Masked IRL in a PyBullet simulation of an object handover task with a Franka
+      arm. Ground-truth rewards are linear combinations of five semantic features (distances to the
+      table, human, laptop, human face, and mug orientation), and each preference is paired with a
+      language instruction that refers to a subset of these features. We compare Masked IRL to a
+      language-conditioned IRL baseline (LC-RL) and an explicit masking baseline that zeros out
+      state dimensions indicated as irrelevant by the mask.
+    </p>
 
-      <div class="columns is-vcentered is-centered">
-        <br>
-        <img src="media/motif_figure7.png" class="interpolation-image" alt="Interpolate start reference image." style="width: 100%;" />
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/exp_results_1.svg"
+             class="interpolation-image wide-figure"
+             alt="Average win rate vs number of demonstrations for each method.">
+        <div class="figure-caption">
+          Average win rate when comparing trajectories across sparse, medium, and dense rewards.
+        </div>
       </div>
+    </div>
 
-      <p>
-        <span class="dnerf2">Fig. 7. <b>Performance on MotIF-1K.</b>
-          (a) shows that our models outperforms state-of-the-art (SOTA) off-the-shelf models in validation and test splits.
-          (b) We explore motion representations in terms of single-frame vs. multi-frame and the effectiveness of trajectory drawing. Single-frame with trajectory drawing demonstrates the highest recall in the test split, while other motion representations falter. Our approach identifies valid motions effectively and generalizes better than baselines.
-      </span>
-      </p>
-      <br><br>
+    <p>
+      Masked IRL achieves higher win rates than LC-RL and remains robust under noisy LLM-generated
+      masks, whereas explicit masking degrades sharply when the masks are imperfect. The masking
+      loss improves sample efficiency: Masked IRL can match or exceed LC-RL performance with up to
+      4.7× fewer demonstrations.
+    </p>
 
-      <div class="columns is-vcentered is-centered">
-        <br>
-        <img src="media/overview_boba.png" class="interpolation-image" alt="Interpolate start reference image." style="width: 100%;" />
+    <!-- Example videos per method: simulation -->
+    <br>
+    <h4 class="title is-5">Example Simulated Trajectories per Method</h4>
+    <p>
+      Below are example optimized trajectories in simulation.
+       <!-- for the instruction
+      <em>“Stay away from the table surface while staying away from the laptop.”</em> Each video shows
+      a top-down and side view of the trajectory preferred by the learned reward. -->
+    </p>
+
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/rq1_vis_1.png"
+             class="interpolation-image wide-figure"
+             alt="Zero-shot performance and regret on real robot.">
+        <div class="figure-caption">
+        </div>
       </div>
+    </div>
 
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/rq1_vis_2.png"
+             class="interpolation-image wide-figure"
+             alt="Zero-shot performance and regret on real robot.">
+        <div class="figure-caption">
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <h4 class="title is-5">Example Visualization of Learned Rewards</h4>
+    <p>
+      Below are the visualization of learned rewards on trajectory sets. Trajectories with higher reward are drawn in darker blue color.
+    </p>
+
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/rq1_vis_3.gif"
+             class="interpolation-image wide-figure"
+             alt="Zero-shot performance and regret on real robot.">
+        <div class="figure-caption">
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/rq1_vis_4.gif"
+             class="interpolation-image wide-figure"
+             alt="Zero-shot performance and regret on real robot.">
+        <div class="figure-caption">
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <!-- RQ2: Language ambiguity -->
+    <h3 class="title is-4">RQ2: Robustness to Ambiguous Language</h3>
+    <p>
+      To study robustness to underspecified instructions, we generate ambiguous commands (such as
+      referent-omitted “Stay away” or expression-omitted “Table”) for sparse preferences that focus
+      on a single feature. Masked IRL uses the LLM disambiguation step to propose clarified
+      commands in context (e.g., “Stay away from the table” or “Stay close to the human”), and then
+      derives state masks from these clarified instructions.
+    </p>
+
+    <!-- TODO: replace with the ambiguity bar chart + mask metrics -->
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/masked_irl_results_ambiguity.svg"
+             class="interpolation-image middle-figure-60"
+             alt="Performance with ambiguous vs disambiguated instructions.">
+        <div class="figure-caption">
+          Disambiguated instructions (DI) improve state-mask quality and downstream reward prediction
+          compared to using ambiguous commands directly (AI).
+        </div>
+      </div>
+    </div>
+
+    <!-- <p>
+      Using disambiguated instructions improves mask F1 scores and increases average win rate on
+      held-out preferences. Masked IRL trained with disambiguated instructions achieves the best
+      generalization, substantially outperforming LC-RL trained directly on ambiguous language.
+    </p> -->
+
+    <hr>
+
+    <!-- RQ3: Real robot -->
+    <h3 class="title is-4">RQ3: Real-World Evaluation on a Franka Arm</h3>
+    <!-- <p>
+      Finally, we evaluate zero-shot transfer to a real Franka Emika Panda arm performing an object
+      handover task with a human. We collect kinesthetic demonstrations for 50 language-labeled
+      preferences and fit reward models using the same training procedure as in simulation. At test
+      time, we optimize trajectories over a set of candidate motions and execute the trajectory that
+      maximizes the learned reward.
+    </p> -->
+    <div class="columns is-vcentered is-mobile">
+    
+    <!-- Left column: text -->
+    <div class="column is-8">
       <p>
-        <span class="dnerf2">App. Fig. 10. <b>Comparison between MotIF and state-of-the-art closed VLMs.</b>
-          We compare three VLMs: our model, GPT-4o, and Gemini-1.5 Pro, along a conversation between a user and an LLM. The user specifies the task and the LLM generates an appropriate motion description. The performance of each VLM is measured by predicting if the robot motions align (VLM response: 1) with motion descriptions suggested from the LLM or not (VLM response: 0), where the images are not included in training our model. Comparing the accuracy, precision, and recall for each model, MotIF shows the highest performance in all metrics.
-      </span>
+        Finally, we evaluate zero-shot transfer to a real Franka Emika Panda arm performing an object
+        handover task with a human. We collect kinesthetic demonstrations for 50 language-labeled
+        preferences and fit reward models using the same training procedure as in simulation. At test
+        time, we optimize trajectories over a set of candidate motions and execute the trajectory that
+        maximizes the learned reward.
       </p>
-      <br>
+    </div>
 
-      <p>
-        App. Fig. 10 shows a toy scenario comparing GPT-4o, Gemini-1.5 Pro, and MotIF, along a conversation between a user and an LLM (ChatGPT).
-        After three turns of conversation, we calculate the performance of motion discrimination using the VLMs. Results show that our model achieves the highest accuracy, precision, and recall, successfully understanding robotic motions in all cases. 
-      </p>
-      <br>
-
+  <!-- Right column: figure -->
+  <div class="column is-4 has-text-centered">
+    <img src="media/trajectory_optimization.png"
+         style="max-width: 100%; height: auto;"
+         class="interpolation-image"
+         alt="Trajectory optimization diagram.">
+    <div class="figure-caption">
+      Trajectory optimization selects the motion that maximizes the learned reward.
     </div>
   </div>
 
+</div>
 
-    <br>
 
-    <h3 class="title is-4 ">Visualization of MotIF Outputs</h3>
-
-      <p>➤ While motion description <i>"move downward, then move to the left"</i> is included in the training data, our VLM generalizes to understanding unseen motion descriptions (row 2-4 in table).</p>
-      <br>
-
-      <div class="two-column-layout">
-        <div class="left-column">
-          <!-- Task Instruction Caption Above the Image -->
-          <div class="task-instruction-caption">Task Instruction: pick up the cup and place it to the lower left of the laptop</div>
-          
-          <!-- Image from the new table data -->
-          <div class="columns is-vcentered is-centered">
-            <img src="media/traj106.jpg" class="interpolation-image" alt="Interpolate start reference image." />
-          </div>
+    <!-- TODO: replace with real-robot bar plots figure -->
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-10">
+        <img src="media/masked_irl_results_real_robot.svg"
+             class="interpolation-image middle-figure-80"
+             alt="Zero-shot performance and regret on real robot.">
+        <div class="figure-caption">
+          Zero-shot performance on novel real-robot preferences: win rate, reward variance under
+          irrelevant perturbations, and regret of optimized trajectories.
         </div>
-        
-        <div class="right-column">
-          <table>
-            <thead>
-              <tr>
-                <th>Motion Description</th>
-                <th>MotIF Output</th>
-                <th>Prediction Correctness</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>move downward, then move to the left</td>
-                <td>1</td>
-                <td class="greencheck">&#10004;</td>
-              </tr>
-              <tr>
-                <td>move farther from the laptop, move downward, then move to the left</td>
-                <td>1</td>
-                <td class="greencheck">&#10004;</td>
-              </tr>
-              <tr>
-                <td>move downward and to the left, passing over the laptop</td>
-                <td>0</td>
-                <td class="greencheck">&#10004;</td>
-              </tr>
-              <tr>
-                <td>move over the laptop</td>
-                <td>0</td>
-                <td class="greencheck">&#10004;</td>
-              </tr>
-            </tbody>
-          </table>
+      </div>
+    </div>
+
+    <p>
+      Masked IRL obtains higher win rates, lower reward variance when irrelevant state dimensions
+      are perturbed, and substantially lower regret of optimized trajectories than LC-RL and explicit
+      masking baselines, indicating better alignment with the underlying human preferences.
+    </p>
+
+    <!-- Example videos per method: real robot -->
+    <br>
+    <h4 class="title is-5">Example Real-Robot Executions per Method</h4>
+    <p>
+      For the test instruction
+      <em>“Stay close to the table surface and away from the human’s face.”</em>:
+    </p>
+
+
+
+    <div class="columns is-multiline">
+      <div class="column is-one-third method-card">
+        <span class="method-badge">Baseline</span>
+        <strong>LC-RL</strong>
+        <!-- TODO: replace src with LC-RL real-robot video -->
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/real_robot_lcrl_video_only.mp4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          LC-RL often fails to simultaneously satisfy both distance and safety constraints.
         </div>
       </div>
 
-      <br><br>
-
-      <p>➤ <strong>The following trajectory visualizes a motion in an <font color="#9900FF">unseen camera viewpoint</font>.</strong> Although the training data only contain front view images for this task, our model effectively understands the robot's motion in an unseen camera viewpoint (topdown view).</p>
-      <br>
-
-      
-      <h3 class="title is-4 ">Qualitative Analysis on Off-the-shelf VLMs</h3>
-      <p>Example Trajectory of a robot brushing hair. The robot is brushing the hair by moving downward, while making horizontal oscillations.</p>
-      <br>
-      <p>To assess the motion understanding capabilities of off-the-shelf VLMs, we conducted an experiment where GPT-4V and GPT-4o were asked to describe a robot's motion from a video of it brushing hair. Although GPT-4o generated a detailed response by extracting keyframes and detecting the trajectory, it ultimately failed to describe the specific shape of the motion or how it was grounded in the scene.</p>
-      <br>
-
-        <video id="teaser" autoplay muted loop height="30%">
-          <source src="media/traj129.mp4"
-                  type="video/mp4">
+      <div class="column is-one-third method-card">
+        <span class="method-badge">Baseline</span>
+        <strong>Explicit Mask (LLM Mask)</strong>
+        <!-- TODO: replace src with Explicit Mask real-robot video -->
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/real_robot_explicitmask_video_only.mp4" type="video/mp4">
         </video>
-        <!-- <div class="caption">"deliver lemonade"<br><font color="#ff9900">"move in the shortest path"</font></div> -->
-        <br>
-
-        <!-- <div class="item">
-          <video poster="" autoplay muted loop height="100%">
-            <source src="media/traj129.mp4"
-                    type="video/mp4">
-          </video>
-          <div class="caption">"deliver lemonade"<br><font color="#ff9900">"move in the shortest path"</font></div>
+        <div class="method-caption">
+          Explicit masking improves behavior but remains sensitive to mask errors.
         </div>
-        <br> -->
+      </div>
 
-        <p>The model is given a video of the robot's motion with the question prompt. The video does not include any trajectory visualization. Given the video, the model fails to describe the semantic meaning of the robot's motion.</p>
-        <br>
-
-        <div class="dropdown" id="gpt4o-dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown()">
-              <!-- See GPT-4o response -->
-              See GPT-4o response
-          </div>
-          <div class="dropdown-content">
-              hihi
-          </div>
+      <div class="column is-one-third method-card">
+        <span class="method-badge">Ours</span>
+        <strong>Masked IRL (LLM Mask)</strong>
+        <!-- TODO: replace src with Masked IRL real-robot video (e.g., ICRA video slice) -->
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/real_robot_maskedirl_video_only.mp4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Masked IRL maintains a safe distance from the human’s face while staying close to the
+          table and keeping the cup upright.
         </div>
-        <br><br>
-
-        <p>The model is given a video of the robot's motion with the robot's trajectory overlaid, and the question prompt.</p>
-
-        <div class="dropdown" id="gpt4o-toggle">
-            <div class="dropdown-header" onclick="toggleDropdown()">
-              See GPT-4o response
-            </div>
-            <div class="dropdown-content">
-                hihi
-            </div>
-        </div>
-
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- ===================== BIBTEX ===================== -->
 <section class="section" id="BibTeX">
   <div class="container is-max-widescreen content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{hwang2025maskedirl,
-  title={Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language},
-  author={Hwang, Minyoung and Forsey-Smerek, Alexandra and Dennler, Nathaniel and Bobu, Andreea},
-  journal={Arxiv Preprint},
-  year={2025},
+  title   = {Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language},
+  author  = {Hwang, Minyoung and Forsey-Smerek, Alexandra and Dennler, Nathaniel and Bobu, Andreea},
+  journal = {arXiv preprint},
+  year    = {2025},
 }</code></pre>
   </div>
 </section>
-
-<!-- <section class="section" id="Acknowledgements"></section>
-  <div class="container is-max-widescreen content">
-    <h4 class="title">Acknowledgements</h4>
-    We thank ... for helping us collect the dataset and providing thoughtful feedback. Names are listed in alphabetical order.
-  </div>
-</section> -->
-
 
 <footer class="footer">
   <div class="container">
@@ -766,16 +721,18 @@
       <div class="column">
         <div class="content has-text-centered">
           <p>
-            This website is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website template</a>,
-            which is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
-            Attribution-ShareAlike 4.0 International License</a> .
+            This website is based on the
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website template</a>,
+            which is licensed under a
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
           </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>
