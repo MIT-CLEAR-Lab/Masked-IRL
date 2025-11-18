@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W77JBH4NHE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W77JBH4NHE');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T3WRXWGZ');</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    /* Define a CSS class for your section with a specific background color */
+    .colored-section {
+      background-color: #F8F8F8; /* Replace with your desired color code or name */
+      padding: 20px; /* Optional: Add padding for better spacing */
+    }
+
+    .colored-section2 {
+      background-color: #f3ebde; /* Replace with your desired color code or name */
+      padding: 20px; /* Optional: Add padding for better spacing */
+    }
+
+    .colored-section3 {
+      background-color: #f0eeee; /* Replace with your desired color code or name */
+      padding: 20px; /* Optional: Add padding for better spacing */
+    }
+
+    ol {
+      margin-left: 50px; /* Adjust the value to control the tab size */
+    }
+  </style>
+
+  <style>
+    .image-container {
+      display: inline-block;
+      margin: 10px; /* Add margin for spacing */
+    }
+
+    .equal-height {
+      height: 250px; /* Set the desired equal height for both images */
+    }
+  </style>
+
+  <style>
+    .two-column-layout {
+      display: flex;
+      gap: 20px; /* Space between columns */
+      align-items: flex-start; /* Aligns the items at the start of the container */
+    }
+
+    .left-column {
+      flex: 1; /* Takes up equal space with right column */
+    }
+
+    .right-column {
+      flex: 1; /* Takes up equal space with left column */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .greencheck {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Task Instruction Caption Style */
+    .task-instruction-caption {
+      background-color: #f2f2f2; /* Light gray background */
+      padding: 10px;
+      border-radius: 8px; /* Rounded corners */
+      text-align: center;
+      margin-bottom: 10px; /* Space between caption and image */
+      font-weight: bold;
+    }
+
+    /* Image style */
+    .interpolation-image {
+      width: 300px; /* Fixed width as requested */
+      display: block;
+      margin: 0 auto; /* Center the image horizontally */
+    }
+  </style>
+
+  <style>
+    /* Ensure the video container is positioned relatively to contain the absolute caption */
+    .item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Style the captions to appear on top of the video */
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 14px;
+      width: 90%; /* Adjust the width if needed */
+    }
+  </style>
+
+  <style>
+    /* Flexbox layout for figure row */
+    .figure-row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Caption styles with gray background and rounded corners */
+    .figure-caption {
+        background-color: #f2f2f2; /* Light gray background */
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    /* Style for individual figure items */
+    .figure-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    /* Ensuring all images have the same height */
+    .figure-item img {
+        height: 200px; /* Set a uniform height for all images */
+        width: auto; /* Maintain aspect ratio */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+  </style>
+
+  <!-- <style>
+    .code-block {
+        background-color: #d4edda; /* Pastel green background */
+        border-radius: 8px; /* Rounded corners */
+        padding: 15px; /* Padding inside the box */
+        font-family: "Courier New", Courier, monospace; /* Code-like font */
+        font-size: 14px; /* Font size */
+        white-space: pre-wrap; /* Preserve whitespace and line breaks */
+        color: #333; /* Text color */
+        margin-bottom: 20px; /* Space below the block */
+        overflow-x: auto; /* Horizontal scroll for long lines */
+    }
+  </style> -->
+
+  <style>
+    .code-block {
+        background-color: #f0f0f0; /* Light gray background */
+        border-radius: 12px; /* Rounded corners */
+        padding: 10px; /* Padding inside the box */
+        font-family: "Courier New", Courier, monospace; /* Code-like font */
+        font-size: 14px; /* Font size */
+        white-space: pre-wrap; /* Preserve whitespace and line breaks */
+        color: #333; /* Text color */
+        margin-bottom: 20px; /* Space below the block */
+        overflow-x: auto; /* Horizontal scroll for long lines */
+        margin: 0 auto; /* Center the box */
+    }
+  </style>
+
+  <style>
+    .dropdown {
+        max-width: 600px;
+        margin: 20px auto;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-header {
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: #e0e0e0;
+        border-radius: 12px 12px 0 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-header::before {
+        content: '\25BC'; /* Downward triangle */
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.open .dropdown-header::before {
+        transform: rotate(180deg); /* Rotate triangle when open */
+    }
+
+    .dropdown-content {
+        display: none;
+        padding: 15px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        white-space: pre-wrap;
+        color: #333;
+    }
+
+    .dropdown.open .dropdown-content {
+        display: block;
+    }
+  </style>
+  <script>
+    function toggleDropdown() {
+        const dropdown = document.getElementById('gpt4o-dropdown');
+        dropdown.classList.toggle('open');
+    }
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WRXWGZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body onload="updateSingleVideo(); updateQpredVideo();">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Masked Inverse Reinforcement Learning for Language Conditioned Reward Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a target="_blank" href="https://minyoung1005.github.io/">Minyoung Hwang</a><sup>1</sup>,</span>
+            <span class="author-block"><a target="_blank" href="">Alexandra Forsey-Smerek</a><sup>1</sup>,</span>
+            <span class="author-block"><a target="_blank" href="https://ndennler.github.io/">Nathaniel Dennler</a><sup>1</sup>,</span>
+            <span class="author-block"><a target="_blank" href="https://www.mit.edu/~abobu/">Andreea Bobu</a><sup>1</sup>,</span>
+          </div>
+
+
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>MIT CSAIL</span>
+          </div>
+
+          <br>
+
+          <span class="link-block"><a target="_blank" href="" class="external-link
+          button is-normal is-rounded is-light"><span class="icon"><i class="fas fa-file"></i></span><span>ArXiv TBD</span></a></span>
+
+          <!-- Code Link. -->
+          <span class="link-block"><a target="_blank" href="https://github.com/Minyoung1005/Masked-IRL" class="external-link
+          button is-normal is-rounded is-light"><span class="icon"><i class="fab fa-github"></i></span><span>Code TBD</span></a></span>
+
+          <!-- <span class="link-block"><a target="_blank" href="" class="external-link
+          button is-normal is-rounded is-light"><span class="icon"><i class="fab fa-github"></i></span><span>Code/Dataset Coming Soon</span></a></span> -->
+
+          <!-- <span class="link-block"><a target="_blank" href="" class="external-link
+            button is-normal is-rounded is-light"><span class="icon"><i class="fab fa-github"></i></span><span>Dataset</span></a></span> -->
+<!--          <span class="link-block">-->
+<!--          <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">-->
+<!--            <span class="icon">-->
+<!--              <i class="fas fa-database" aria-hidden="true"></i>-->
+<!--            </span>-->
+<!--            <span>Dataset</span>-->
+<!--          </a>-->
+<!--        </span>-->
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered is-centered">
+          <br>
+          <video id="teaser" autoplay muted loop width="800" height="100%">
+            <source src="media/zoom_out_video_compressed.mp4"
+                    type="video/mp4">
+          </video>
+
+        </div>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf2"> 
+            How can robots learn reward functions that capture true human preferences when <font color="#9900FF">demonstrations are ambiguous?</font>
+        </span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="colored-section">
+  <div class="container is-max-desktop is-full-fullhd">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <br/>
+          <p>
+            Robots can adapt to user preferences by learning reward functions from demonstrations, but with limited data, reward models often overfit to spurious correlations and fail to generalize. Demonstrations often show how to do a task, not what matters for the task, leading the model to fixate on irrelevant state details. Natural language can more directly specify what the robot should focus on, and, in principle, help disambiguate between many reward functions consistent with the demonstrations. However, existing language-conditioned reward learning methods typically treat instructions as simple conditioning signals, without fully exploiting their potential to resolve ambiguity. Moreover, real instructions are often ambiguous themselves, so naive conditioning is unreliable. Our key insight is that these two input types carry complementary information: demonstrations show how to act, while language specifies what is important. We propose Masked Inverse Reinforcement Learning (Masked IRL), a framework that uses large language models (LLMs) to combine the strengths of both input types. Masked IRL infers state-relevance masks from language instructions and enforces invariance to irrelevant state components. When instructions are ambiguous, it uses LLM reasoning to clarify them in the context of the demonstrations. In simulation and on a real robot, Masked IRL outperforms prior language-conditioned IRL methods by up to 15% while using up to 4.7 times less data, demonstrating improved sample-efficiency, generalization, and robustness to ambiguous language.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+<style>
+  .centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .interpolation-image {
+    display: block;
+    margin: 20px 0;  /* Give some space above and below the image */
+  }
+</style>
+
+<section>
+  <div class="rows">
+    <div class="row is-full-width">
+      <h2 class="title is-3"><span class="dperact">Language-Conditioned Reward Learning</span></h2>
+      <p>The dataset contains 653 human and 369 robot demonstrations across 13 task categories. For each trajectory, we collect the RGBD image observations, optical flow, single keypoint tracking, and annotate task and motion descriptions. For robot demonstrations, joint states are also in the dataset. In the following examples, task descriptions are written in white and motion descriptions are written in <font color="#ff9900">orange</font>.</p>
+      <br>
+
+      <h3 class="title is-4">Robot Demonstrations</h3>
+
+      <h4 class="title is-5">➤ Non-Interactive Tasks</h3>
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="3">
+            <div class="item">
+              <video poster="" autoplay muted loop height="100%">
+                <source src="media/idx48_traj180.mp4"
+                        type="video/mp4">
+              </video>
+              <div class="caption">"deliver lemonade"<br><font color="#ff9900">"move in the shortest path"</font></div>
+            </div>
+            <div class="item">
+              <video poster="" autoplay muted loop height="100%">
+                <source src="media/traj72.mp4"
+                        type="video/mp4">
+              </video>
+              <div class="caption">"draw path"<br><font color="#ff9900">"move to the right while making vertical oscillations"</font></div>
+            </div>
+            <div class="item">
+              <video poster="" autoplay muted loop height="100%">
+                <source src="media/traj88.mp4"
+                        type="video/mp4">
+              </video>
+              <div class="caption">"draw path"<br><font color="#ff9900">"make a triangular motion clockwise"</font></div>
+            </div>
+            <div class="item">
+              <video poster="" autoplay muted loop height="100%">
+                <source src="media/traj88.mp4"
+                        type="video/mp4">
+              </video>
+              <div class="caption">"draw path"<br><font color="#ff9900">"make a triangular motion clockwise"</font></div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+
+      <h3 class="title is-4">Various Visual Motion Representations</h3>
+        <div class="figure-container">
+
+          <div class="figure-row">
+              <div class="figure-item">
+                  <img src="media/traj135.jpg" alt="Single Keypoint">
+                  <div class="figure-caption">Single Keypoint</div>
+              </div>
+              <div class="figure-item">
+                  <img src="media/traj135_optical_flow.jpg" alt="Optical Flow">
+                  <div class="figure-caption">Optical Flow</div>
+              </div>
+              <div class="figure-item">
+                <img src="media/traj135_1x2_cropped.jpg" alt="Optical Flow">
+                <div class="figure-caption">2-frame Storyboard</div>
+              </div>
+              <div class="figure-item">
+                <img src="media/traj135_2x2_storyboard_cropped.jpg" alt="Optical Flow">
+                <div class="figure-caption">4-frame Storyboard</div>
+              </div>
+              </div>
+
+      <br><br>
+      
+
+      <h3 class="title is-4">Grounded Motion Annotations</h3>
+      <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th rowspan="2" style="border: 1px solid black; padding: 8px;">Category</th>
+                <th rowspan="2" style="border: 1px solid black; padding: 8px;">Task</th>
+                <th rowspan="2" style="border: 1px solid black; padding: 8px;">Motion Description Examples</th>
+                <th colspan="2" style="border: 1px solid black; padding: 8px;">Demonstrations</th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black; padding: 8px;">Human</th>
+                <th style="border: 1px solid black; padding: 8px;">Robot</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" style="border: 1px solid black; padding: 8px;">Non-Interactive</td>
+                <td style="border: 1px solid black; padding: 8px;">Outdoor Navigation</td>
+                <td style="border: 1px solid black; padding: 8px;">move in the shortest path<br>make a detour to the left and follow the walkway, avoiding moving over the grass</td>
+                <td style="border: 1px solid black; padding: 8px;">-</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Indoor Navigation</td>
+                <td style="border: 1px solid black; padding: 8px;">move in the shortest path<br>make a detour to the right of the long table, avoiding collision with chairs</td>
+                <td style="border: 1px solid black; padding: 8px;">-</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Draw Path</td>
+                <td style="border: 1px solid black; padding: 8px;">make a triangular motion clockwise<br>move upward and to the right</td>
+                <td style="border: 1px solid black; padding: 8px;">-</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td rowspan="6" style="border: 1px solid black; padding: 8px;">Object-Interactive</td>
+                <td style="border: 1px solid black; padding: 8px;">Shake</td>
+                <td style="border: 1px solid black; padding: 8px;">move up and down 4 times<br>completely flip the object to the right and flip it back to its initial state</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Pick and place</td>
+                <td style="border: 1px solid black; padding: 8px;">move downward and to the left<br>move downward while getting farther from &lt;obstacle&gt;, then move to the left</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Stir</td>
+                <td style="border: 1px solid black; padding: 8px;">make 2 circular motions counter-clockwise<br>move upward, then move downward while making diagonal oscillations</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Wipe</td>
+                <td style="border: 1px solid black; padding: 8px;">move to the right and move to the left, repeating this sequence 2 times<br>move to the right, making diagonal oscillations</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Open/Close the cabinet</td>
+                <td style="border: 1px solid black; padding: 8px;">move to the right<br>move upward and to the left</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;">-</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Spread Condiment</td>
+                <td style="border: 1px solid black; padding: 8px;">move to the left and to the right<br>move to the left while making back and forth oscillations</td>
+                <td style="border: 1px solid black; padding: 8px;">-</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td rowspan="4" style="border: 1px solid black; padding: 8px;">User-Interactive</td>
+                <td style="border: 1px solid black; padding: 8px;">Handover</td>
+                <td style="border: 1px solid black; padding: 8px;">move upward and to the left<br>move downward and to the right following a concave curve</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;">-</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Brush hair</td>
+                <td style="border: 1px solid black; padding: 8px;">move downward while making horizontal oscillations<br>make 5 strokes downward, increasing the starting height of each stroke</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Tidy hair</td>
+                <td style="border: 1px solid black; padding: 8px;">move downward and to the right following a convex curve<br>make a circular motion clockwise, move upward, then move downward and to the right</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Style hair</td>
+                <td style="border: 1px solid black; padding: 8px;">move to the right shortly, then move to the left following a concave curve<br>make a circular motion clockwise, gradually increasing the radius of the circle</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+                <td style="border: 1px solid black; padding: 8px;" class="greencheck">&#10004;</td>
+            </tr>
+        </tbody>
+    </table>    
+
+      <!-- <div class="columns is-vcentered is-centered">
+        <br>
+        <img src="media/app_table_1.png" class="interpolation-image" alt="Interpolate start reference image." style="width: 100%;" />
+      </div> -->
+      <br>
+
+      <p>
+        <span class="dnerf2">App. Table 1. <b>List of Tasks and Motion Descriptions.</b> The collected dataset contains 653 human and 369 robot demonstrations
+          across 13 task categories, 36 task instructions, and 239 motion descriptions. Checkmarks denote which agent (human/robot)
+          demonstrations exist for each task. The table provides two motion description examples for each task.
+      </span>
+      </p>
+
+    </div>
+  <!-- </div> -->
+<!-- </section>
+
+<section> -->
+
+  <br><br>
+  
+  <div class="rows">
+    <div class="row is-full-width">
+      <h2 class="title is-3"><span class="dperact">Results</span></h2>
+      <h3 class="title is-4 ">How does MotIF compare to state-of-the-art VLMs?</h3>
+
+      <!-- <p>
+        aa
+      </p>
+      <br> -->
+
+      <div class="columns is-vcentered is-centered">
+        <br>
+        <img src="media/motif_figure7.png" class="interpolation-image" alt="Interpolate start reference image." style="width: 100%;" />
+      </div>
+
+      <p>
+        <span class="dnerf2">Fig. 7. <b>Performance on MotIF-1K.</b>
+          (a) shows that our models outperforms state-of-the-art (SOTA) off-the-shelf models in validation and test splits.
+          (b) We explore motion representations in terms of single-frame vs. multi-frame and the effectiveness of trajectory drawing. Single-frame with trajectory drawing demonstrates the highest recall in the test split, while other motion representations falter. Our approach identifies valid motions effectively and generalizes better than baselines.
+      </span>
+      </p>
+      <br><br>
+
+      <div class="columns is-vcentered is-centered">
+        <br>
+        <img src="media/overview_boba.png" class="interpolation-image" alt="Interpolate start reference image." style="width: 100%;" />
+      </div>
+
+      <p>
+        <span class="dnerf2">App. Fig. 10. <b>Comparison between MotIF and state-of-the-art closed VLMs.</b>
+          We compare three VLMs: our model, GPT-4o, and Gemini-1.5 Pro, along a conversation between a user and an LLM. The user specifies the task and the LLM generates an appropriate motion description. The performance of each VLM is measured by predicting if the robot motions align (VLM response: 1) with motion descriptions suggested from the LLM or not (VLM response: 0), where the images are not included in training our model. Comparing the accuracy, precision, and recall for each model, MotIF shows the highest performance in all metrics.
+      </span>
+      </p>
+      <br>
+
+      <p>
+        App. Fig. 10 shows a toy scenario comparing GPT-4o, Gemini-1.5 Pro, and MotIF, along a conversation between a user and an LLM (ChatGPT).
+        After three turns of conversation, we calculate the performance of motion discrimination using the VLMs. Results show that our model achieves the highest accuracy, precision, and recall, successfully understanding robotic motions in all cases. 
+      </p>
+      <br>
+
+    </div>
+  </div>
+
+
+    <br>
+
+    <h3 class="title is-4 ">Visualization of MotIF Outputs</h3>
+
+      <p>➤ While motion description <i>"move downward, then move to the left"</i> is included in the training data, our VLM generalizes to understanding unseen motion descriptions (row 2-4 in table).</p>
+      <br>
+
+      <div class="two-column-layout">
+        <div class="left-column">
+          <!-- Task Instruction Caption Above the Image -->
+          <div class="task-instruction-caption">Task Instruction: pick up the cup and place it to the lower left of the laptop</div>
+          
+          <!-- Image from the new table data -->
+          <div class="columns is-vcentered is-centered">
+            <img src="media/traj106.jpg" class="interpolation-image" alt="Interpolate start reference image." />
+          </div>
+        </div>
+        
+        <div class="right-column">
+          <table>
+            <thead>
+              <tr>
+                <th>Motion Description</th>
+                <th>MotIF Output</th>
+                <th>Prediction Correctness</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>move downward, then move to the left</td>
+                <td>1</td>
+                <td class="greencheck">&#10004;</td>
+              </tr>
+              <tr>
+                <td>move farther from the laptop, move downward, then move to the left</td>
+                <td>1</td>
+                <td class="greencheck">&#10004;</td>
+              </tr>
+              <tr>
+                <td>move downward and to the left, passing over the laptop</td>
+                <td>0</td>
+                <td class="greencheck">&#10004;</td>
+              </tr>
+              <tr>
+                <td>move over the laptop</td>
+                <td>0</td>
+                <td class="greencheck">&#10004;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <br><br>
+
+      <p>➤ <strong>The following trajectory visualizes a motion in an <font color="#9900FF">unseen camera viewpoint</font>.</strong> Although the training data only contain front view images for this task, our model effectively understands the robot's motion in an unseen camera viewpoint (topdown view).</p>
+      <br>
+
+      
+      <h3 class="title is-4 ">Qualitative Analysis on Off-the-shelf VLMs</h3>
+      <p>Example Trajectory of a robot brushing hair. The robot is brushing the hair by moving downward, while making horizontal oscillations.</p>
+      <br>
+      <p>To assess the motion understanding capabilities of off-the-shelf VLMs, we conducted an experiment where GPT-4V and GPT-4o were asked to describe a robot's motion from a video of it brushing hair. Although GPT-4o generated a detailed response by extracting keyframes and detecting the trajectory, it ultimately failed to describe the specific shape of the motion or how it was grounded in the scene.</p>
+      <br>
+
+        <video id="teaser" autoplay muted loop height="30%">
+          <source src="media/traj129.mp4"
+                  type="video/mp4">
+        </video>
+        <!-- <div class="caption">"deliver lemonade"<br><font color="#ff9900">"move in the shortest path"</font></div> -->
+        <br>
+
+        <!-- <div class="item">
+          <video poster="" autoplay muted loop height="100%">
+            <source src="media/traj129.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="caption">"deliver lemonade"<br><font color="#ff9900">"move in the shortest path"</font></div>
+        </div>
+        <br> -->
+
+        <p>The model is given a video of the robot's motion with the question prompt. The video does not include any trajectory visualization. Given the video, the model fails to describe the semantic meaning of the robot's motion.</p>
+        <br>
+
+        <div class="dropdown" id="gpt4o-dropdown">
+          <div class="dropdown-header" onclick="toggleDropdown()">
+              <!-- See GPT-4o response -->
+              See GPT-4o response
+          </div>
+          <div class="dropdown-content">
+              hihi
+          </div>
+        </div>
+        <br><br>
+
+        <p>The model is given a video of the robot's motion with the robot's trajectory overlaid, and the question prompt.</p>
+
+        <div class="dropdown" id="gpt4o-toggle">
+            <div class="dropdown-header" onclick="toggleDropdown()">
+              See GPT-4o response
+            </div>
+            <div class="dropdown-content">
+                hihi
+            </div>
+        </div>
+
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{hwang2025maskedirl,
+  title={Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language},
+  author={Hwang, Minyoung and Forsey-Smerek, Alexandra and Dennler, Nathaniel and Bobu, Andreea},
+  journal={Arxiv Preprint},
+  year={2025},
+}</code></pre>
+  </div>
+</section>
+
+<!-- <section class="section" id="Acknowledgements"></section>
+  <div class="container is-max-widescreen content">
+    <h4 class="title">Acknowledgements</h4>
+    We thank ... for helping us collect the dataset and providing thoughtful feedback. Names are listed in alphabetical order.
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            This website is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website template</a>,
+            which is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike 4.0 International License</a> .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
