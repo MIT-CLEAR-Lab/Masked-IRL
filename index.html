@@ -352,7 +352,7 @@
             <span class="author-block"><sup>1</sup>MIT CSAIL</span>
           </div>
 
-          <br>
+          <!-- <br> -->
 
           <span class="link-block"><a target="_blank" href="https://arxiv.org/html/2511.14565v1" class="external-link
           button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file"></i></span><span>ArXiv</span></a></span>
@@ -374,6 +374,9 @@
 <!--            <span>Dataset</span>-->
 <!--          </a>-->
 <!--        </span>-->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">ICRA 2026</span>
+          </div>
           <br><br>
         </div>
       </div>
@@ -506,63 +509,6 @@ Natural language can more directly specify what the robot should focus on, and, 
       4.7× fewer demonstrations.
     </p>
 
-    <!-- Example videos per method: simulation -->
-    <br>
-    <h4 class="title is-5">Example Simulated Trajectories per Method</h4>
-    <p>
-      Below are example optimized trajectories in simulation.
-       <!-- for the instruction
-      <em>“Stay away from the table surface while staying away from the laptop.”</em> Each video shows
-      a top-down and side view of the trajectory preferred by the learned reward. -->
-    </p>
-
-    <div class="columns is-vcentered is-centered">
-      <div class="column is-10">
-        <img src="media/rq1_vis_1.png"
-             class="interpolation-image wide-figure"
-             alt="Zero-shot performance and regret on real robot.">
-        <div class="figure-caption">
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-vcentered is-centered">
-      <div class="column is-10">
-        <img src="media/rq1_vis_2.png"
-             class="interpolation-image wide-figure"
-             alt="Zero-shot performance and regret on real robot.">
-        <div class="figure-caption">
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <h4 class="title is-5">Example Visualization of Learned Rewards</h4>
-    <p>
-      Below are the visualization of learned rewards on trajectory sets. Trajectories with higher reward are drawn in darker blue color.
-    </p>
-
-    <div class="columns is-vcentered is-centered">
-      <div class="column is-10">
-        <img src="media/rq1_vis_3.gif"
-             class="interpolation-image wide-figure"
-             alt="Zero-shot performance and regret on real robot.">
-        <div class="figure-caption">
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-vcentered is-centered">
-      <div class="column is-10">
-        <img src="media/rq1_vis_4.gif"
-             class="interpolation-image wide-figure"
-             alt="Zero-shot performance and regret on real robot.">
-        <div class="figure-caption">
-        </div>
-      </div>
-    </div>
-
-
     <hr>
 
     <!-- RQ2: Language ambiguity -->
@@ -655,47 +601,129 @@ Natural language can more directly specify what the robot should focus on, and, 
     <br>
     <h4 class="title is-5">Example Real-Robot Executions per Method</h4>
     <p>
-      For the test instruction
-      <em>“Stay close to the table surface and away from the human’s face.”</em>:
+      Below are video comparisons of our method (Masked IRL) versus baselines across four different scenarios:
     </p>
 
-
-
+    <!-- Scenario 1: Stay away from human -->
+    <h5 class="title is-6" style="margin-top: 30px;">Scenario 1: Stay away from human</h5>
+    <p style="font-style: italic; margin-bottom: 20px;">
+      The robot is tasked with moving a sealed snack bag from the left side of a dining table to a marked spot on the right, 
+      while a person stands close by, casually leaning against the table and occasionally shifting their weight or moving their arms 
+      while having breakfast. The snack bag itself is lightweight and harmless, so the human's concern is not about spilling or 
+      damaging the object, but about feeling comfortable and safe sharing the workspace.
+    </p>
     <div class="columns is-multiline">
-      <div class="column is-one-third method-card">
+      <div class="column is-half method-card">
         <span class="method-badge">Baseline</span>
         <strong>LC-RL</strong>
-        <!-- TODO: replace src with LC-RL real-robot video -->
         <video class="method-video" autoplay muted loop playsinline>
-          <source src="media/real_robot_lcrl_video_only.mp4" type="video/mp4">
+          <source src="media/C0062_traj94_1_stayawayfromhuman_baseline.MP4" type="video/mp4">
         </video>
         <div class="method-caption">
-          LC-RL often fails to simultaneously satisfy both distance and safety constraints.
+          Baseline method execution.
         </div>
       </div>
-
-      <div class="column is-one-third method-card">
-        <span class="method-badge">Baseline</span>
-        <strong>Explicit Mask (LLM Mask)</strong>
-        <!-- TODO: replace src with Explicit Mask real-robot video -->
-        <video class="method-video" autoplay muted loop playsinline>
-          <source src="media/real_robot_explicitmask_video_only.mp4" type="video/mp4">
-        </video>
-        <div class="method-caption">
-          Explicit masking improves behavior but remains sensitive to mask errors.
-        </div>
-      </div>
-
-      <div class="column is-one-third method-card">
+      <div class="column is-half method-card">
         <span class="method-badge">Ours</span>
-        <strong>Masked IRL (LLM Mask)</strong>
-        <!-- TODO: replace src with Masked IRL real-robot video (e.g., ICRA video slice) -->
+        <strong>Masked IRL</strong>
         <video class="method-video" autoplay muted loop playsinline>
-          <source src="media/real_robot_maskedirl_video_only.mp4" type="video/mp4">
+          <source src="media/C0059_traj30_1_stayawayfromhuman_maskedirl.MP4" type="video/mp4">
         </video>
         <div class="method-caption">
-          Masked IRL maintains a safe distance from the human’s face while staying close to the
-          table and keeping the cup upright.
+          Masked IRL maintains safe distance from the human.
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario 2: Stay close to table surface -->
+    <h5 class="title is-6" style="margin-top: 30px;">Scenario 2: Stay close to table surface</h5>
+    <p style="font-style: italic; margin-bottom: 20px;">
+      The robot is instructed to wipe a section of the table using a towel, with the goal of moving the towel from one point 
+      on the table to the other to remove moisture and dust. The towel is flexible, so its orientation and grasp direction do not matter, 
+      but effective cleaning clearly depends on maintaining continuous contact with the table surface.
+    </p>
+    <div class="columns is-multiline">
+      <div class="column is-half method-card">
+        <span class="method-badge">Baseline</span>
+        <strong>LC-RL</strong>
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/C0045_traj64_stayclosetotable_baseline.MP4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Baseline method execution.
+        </div>
+      </div>
+      <div class="column is-half method-card">
+        <span class="method-badge">Ours</span>
+        <strong>Masked IRL</strong>
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/C0042_traj302_stayclosetotable_maskedirl.MP4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Masked IRL maintains continuous contact with the table surface.
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario 3: Stay away from the table surface. Stay away from the human. -->
+    <h5 class="title is-6" style="margin-top: 30px;">Scenario 3: Stay away from the table surface. Stay away from the human.</h5>
+    <p style="font-style: italic; margin-bottom: 20px;">
+      The robot is asked to transfer a soft snack bag from a pickup location to a person's hand, 
+      while the table surface itself is visibly cluttered with small objects with different shapes and heights. 
+      The object remains intact in all cases, but the preferred behavior is implied by how the robot chooses a path 
+      that keeps clear of both the human and the potentially contaminated table surface.
+    </p>
+    <div class="columns is-multiline">
+      <div class="column is-half method-card">
+        <span class="method-badge">Baseline</span>
+        <strong>LC-RL</strong>
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/C0056_traj109_stayawayfromtablehuman_baseline.MP4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Baseline method execution.
+        </div>
+      </div>
+      <div class="column is-half method-card">
+        <span class="method-badge">Ours</span>
+        <strong>Masked IRL</strong>
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/C0053_traj13_stayawayfromtablehuman_maskedirl.MP4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Masked IRL avoids both the contaminated table surface and the human.
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario 4: Stay away from the human. Stay away from the laptop. -->
+    <h5 class="title is-6" style="margin-top: 30px;">Scenario 4: Stay away from the human. Stay away from the laptop.</h5>
+    <p style="font-style: italic; margin-bottom: 20px;">
+      The robot is moving a coffee mug filled with liquid from one end of a desk to the other, 
+      in a setting where a person is seated directly in front of an open laptop, 
+      typing the keyboard. The scene immediately suggests high stakes: a spill could damage the laptop or splash the person, 
+      even though the robot's task is nominally simple. 
+      The main difference between trajectories is about how carefully the robot avoids regions associated with risk and discomfort.
+    </p>
+    <div class="columns is-multiline">
+      <div class="column is-half method-card">
+        <span class="method-badge">Baseline</span>
+        <strong>LC-RL</strong>
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/C0049_traj311_stayawayfromhumanlaptop_baseline.MP4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Baseline method execution.
+        </div>
+      </div>
+      <div class="column is-half method-card">
+        <span class="method-badge">Ours</span>
+        <strong>Masked IRL</strong>
+        <video class="method-video" autoplay muted loop playsinline>
+          <source src="media/C0046_traj199_1_stayawayfromhumanlaptop_maskedirl.MP4" type="video/mp4">
+        </video>
+        <div class="method-caption">
+          Masked IRL carefully avoids both the human and the laptop to prevent spills.
         </div>
       </div>
     </div>
@@ -709,8 +737,8 @@ Natural language can more directly specify what the robot should focus on, and, 
     <pre><code>@article{hwang2025maskedirl,
   title   = {Masked IRL: LLM-Guided Reward Disambiguation from Demonstrations and Language},
   author  = {Hwang, Minyoung and Forsey-Smerek, Alexandra and Dennler, Nathaniel and Bobu, Andreea},
-  journal = {arXiv preprint},
-  year    = {2025},
+  journal = {{IEEE} International Conference on Robotics and Automation, {ICRA}},
+  year    = {2026},
 }</code></pre>
   </div>
 </section>
