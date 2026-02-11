@@ -1,0 +1,16 @@
+runs
+*.txt
+!requirements.txt
+data/wandb/
+data/traj_sets/
+data/models/
+.idea/
+__pycache__/
+*.py[cod]
+**/.DS_Store
+scripts/*.png
+src/eval/wandb/
+.vscode/
+data/
+wandb/
+notebooks/artifacts/

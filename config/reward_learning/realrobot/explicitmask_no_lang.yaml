@@ -1,0 +1,28 @@
+env:
+  type: "frankarobot_real"
+  resources_dir: "../data/resources"
+  object_centers: {'HUMAN_CENTER': [-0.2, -0.6, 0.9], 'LAPTOP_CENTER': [-0.4, 0.0, 0.635]}
+  horizon: 10
+  timestep: 0.5
+  trajset_file: "../config/data_split_config/frankarobot_real/filtered_trajs.npy"
+  per_SG: 5
+  train_test_split: 0.8
+  real: False
+
+  input_dict: {'lowdim': False, 'EErot': False, 'noxyz': False, 'norot': False, 'noangles': True}
+
+irl:
+  type: explicitmask_lang_no_lang
+  num_iterations: 100
+  linear: true
+  hidden_sizes: [128, 256, 128]
+  lr: 0.001
+  masked_loss_weight: 1.0
+  masked_loss_noise: 1.0
+  language_encoder: t5
+  language:
+    vocab_size: 10000
+  batch_size: 512
+  data_split_config_path: "../config/data_split_config/frankarobot_real"
+  omit_referent: False
+  omit_expression: False

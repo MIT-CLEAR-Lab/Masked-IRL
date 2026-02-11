@@ -1,0 +1,504 @@
+{
+    "-1_0_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from human",
+                "Stay away from laptop",
+                "Stay away from table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        }
+    },
+    "0_-1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human",
+                "Stay close to the laptop"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "0_0_-1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human",
+                "Stay close to the laptop"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the laptop"
+            ]
+        }
+    },
+    "0_0_1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human",
+                "Stay away from the laptop"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the laptop"
+            ]
+        }
+    },
+    "0_1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from human",
+                "Stay away from laptop",
+                "Stay away from table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human"
+            ]
+        }
+    },
+    "1_0_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        }
+    }
+}

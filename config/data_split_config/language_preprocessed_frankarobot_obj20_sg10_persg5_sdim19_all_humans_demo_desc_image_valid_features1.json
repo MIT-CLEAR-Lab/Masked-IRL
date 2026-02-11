@@ -1,0 +1,6267 @@
+[
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "type": "frankarobot"
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                -1,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "-1_0_0_0_0",
+        "gt_state_mask": [
+            [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ]
+        ],
+        "demo_indices": [
+            77,
+            359,
+            359,
+            359,
+            77,
+            359,
+            609,
+            548,
+            77,
+            359
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay away. ",
+                "pred_state_masks": {
+                    "795": [
+                        [
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "table. ",
+                "pred_state_masks": {
+                    "795": [
+                        [
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                0,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                -1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_-1_0_0_0",
+        "gt_state_mask": [
+            [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            555,
+            26,
+            743,
+            411,
+            69,
+            706,
+            627,
+            89,
+            648,
+            325
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay close. ",
+                "pred_state_masks": {
+                    "93": [
+                        [
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "human. ",
+                "pred_state_masks": {
+                    "93": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                -1,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_0_-1_0_0",
+        "gt_state_mask": [
+            [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            354,
+            246,
+            236,
+            6,
+            544,
+            38,
+            417,
+            38,
+            485,
+            433
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay close. ",
+                "pred_state_masks": {
+                    "57": [
+                        [
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "laptop. ",
+                "pred_state_masks": {
+                    "57": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_0_0_-1_0",
+        "gt_state_mask": [
+            [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            624,
+            356,
+            624,
+            624,
+            624,
+            24,
+            417,
+            624,
+            709,
+            793
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay close. ",
+                "pred_state_masks": {
+                    "585": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "human face. ",
+                "pred_state_masks": {
+                    "585": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_0_0_0_-1",
+        "gt_state_mask": [
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            115,
+            663,
+            23,
+            273,
+            144,
+            476,
+            165,
+            177,
+            273,
+            317
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Keep it upside down. ",
+                "pred_state_masks": {
+                    "915": [
+                        [
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "coffee. ",
+                "pred_state_masks": {
+                    "915": [
+                        [
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_0_0_0_1",
+        "gt_state_mask": [
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            779,
+            107,
+            109,
+            67,
+            310,
+            125,
+            103,
+            744,
+            21,
+            112
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Keep it upright. ",
+                "pred_state_masks": {
+                    "659": [
+                        [
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "coffee. ",
+                "pred_state_masks": {
+                    "659": [
+                        [
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_0_0_1_0",
+        "gt_state_mask": [
+            [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            518,
+            502,
+            407,
+            223,
+            183,
+            522,
+            148,
+            482,
+            470,
+            85
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay away. ",
+                "pred_state_masks": {
+                    "490": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "human face. ",
+                "pred_state_masks": {
+                    "490": [
+                        [
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_0_1_0_0",
+        "gt_state_mask": [
+            [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            45,
+            45,
+            695,
+            482,
+            384,
+            116,
+            550,
+            13,
+            411,
+            795
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay away. ",
+                "pred_state_masks": {
+                    "613": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "laptop. ",
+                "pred_state_masks": {
+                    "613": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                0,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "0_1_0_0_0",
+        "gt_state_mask": [
+            [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "demo_indices": [
+            402,
+            274,
+            51,
+            122,
+            475,
+            434,
+            274,
+            58,
+            506,
+            792
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay away. ",
+                "pred_state_masks": {
+                    "927": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "human. ",
+                "pred_state_masks": {
+                    "927": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                0,
+                1,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                -1,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        },
+        "theta_key": "1_0_0_0_0",
+        "gt_state_mask": [
+            [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ]
+        ],
+        "demo_indices": [
+            109,
+            543,
+            139,
+            547,
+            507,
+            547,
+            547,
+            249,
+            547,
+            139
+        ],
+        "ambiguous_language": {
+            "omit_referent": {
+                "language_instruction": "Stay close. ",
+                "pred_state_masks": {
+                    "929": [
+                        [
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "omit_expression": {
+                "language_instruction": "table. ",
+                "pred_state_masks": {
+                    "929": [
+                        [
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                0,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                -1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                0,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                -1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                -1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                -1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                0,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                0,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                0,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                1,
+                -1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                1,
+                0
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    },
+    {
+        "features": [
+            "table",
+            "human",
+            "laptop",
+            "proxemics",
+            "coffee"
+        ],
+        "feature_scaling": "normalize",
+        "preferencer": {
+            "theta": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "beta": 20.0,
+            "f_method": "boltzmann",
+            "s_method": "luce"
+        }
+    }
+]

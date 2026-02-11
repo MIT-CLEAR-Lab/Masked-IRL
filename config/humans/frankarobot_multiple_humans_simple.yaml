@@ -1,0 +1,171 @@
+humans:
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 0
+    - 0
+    - 0
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - -1
+    - 0
+    - 0
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 0
+    - -1
+    - 0
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 0
+    - 0
+    - -1
+    - 0
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 0
+    - 0
+    - 0
+    - 0
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce

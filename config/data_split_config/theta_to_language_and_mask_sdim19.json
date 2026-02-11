@@ -1,0 +1,3408 @@
+{
+    "-1_-1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table",
+                "Stay close to the objects"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "-1_0_-1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table",
+                "Stay close to the table edge"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        }
+    },
+    "-1_0_0_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human",
+                "Stay close to the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface",
+                "Face the human"
+            ]
+        }
+    },
+    "-1_0_0_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table. Keep it upside down."
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Keep coffee on the table",
+                "Move coffee towards the human"
+            ]
+        }
+    },
+    "-1_0_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        }
+    },
+    "-1_0_0_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table",
+                "Keep it upright"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Place coffee on the table"
+            ]
+        }
+    },
+    "-1_0_0_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Face the human"
+            ]
+        }
+    },
+    "-1_0_1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        }
+    },
+    "-1_1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "0_-1_-1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "0_-1_0_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move towards the human face"
+            ]
+        }
+    },
+    "0_-1_0_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Serve coffee to the human"
+            ]
+        }
+    },
+    "0_-1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move towards the human"
+            ]
+        }
+    },
+    "0_-1_0_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Hand coffee to the human"
+            ]
+        }
+    },
+    "0_-1_0_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface",
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Interact with the objects on the table"
+            ]
+        }
+    },
+    "0_-1_1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table",
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "0_0_-1_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "0_0_-1_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Keep cup upright near the table"
+            ]
+        }
+    },
+    "0_0_-1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "0_0_-1_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Keep the cup near the table surface"
+            ]
+        }
+    },
+    "0_0_-1_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface",
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "0_0_0_-1_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Bring coffee to the human's face"
+            ]
+        }
+    },
+    "0_0_0_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move towards the human"
+            ]
+        }
+    },
+    "0_0_0_-1_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Present coffee to the human"
+            ]
+        }
+    },
+    "0_0_0_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Keep the cup upside down"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Pick up the cup from the table"
+            ]
+        }
+    },
+    "0_0_0_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Keep the cup upright"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Place coffee on the table"
+            ]
+        }
+    },
+    "0_0_0_1_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table, keep it upside down"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Present coffee to the human"
+            ]
+        }
+    },
+    "0_0_0_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move towards the human face"
+            ]
+        }
+    },
+    "0_0_0_1_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table",
+                "Keep it upright"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Present coffee to the human"
+            ]
+        }
+    },
+    "0_0_1_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human",
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human",
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "0_0_1_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table."
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move towards the laptop"
+            ]
+        }
+    },
+    "0_0_1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "0_0_1_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table",
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move the cup towards the human"
+            ]
+        }
+    },
+    "0_0_1_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop",
+                "Face the human"
+            ]
+        }
+    },
+    "0_1_-1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human",
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human",
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "0_1_0_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human",
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "0_1_0_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table and keep it upside down"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Deliver coffee to the human"
+            ]
+        }
+    },
+    "0_1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    },
+    "0_1_0_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table",
+                "Keep it upright"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Give coffee to the human"
+            ]
+        }
+    },
+    "0_1_0_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human face"
+            ]
+        }
+    },
+    "0_1_1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Move towards the human"
+            ]
+        }
+    },
+    "1_-1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface",
+                "Stay close to the human"
+            ]
+        }
+    },
+    "1_0_-1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the laptop"
+            ]
+        }
+    },
+    "1_0_0_-1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Face the human"
+            ]
+        }
+    },
+    "1_0_0_0_-1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Keep coffee on the table",
+                "Move coffee close to the table surface"
+            ]
+        }
+    },
+    "1_0_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        }
+    },
+    "1_0_0_0_1": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        }
+    },
+    "1_0_0_1_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface",
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        }
+    },
+    "1_0_1_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human",
+                "Stay away from the table"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface"
+            ]
+        }
+    },
+    "1_1_0_0_0": {
+        "omit_referent": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the table surface",
+                "Stay away from the human"
+            ]
+        },
+        "omit_expression": {
+            "pred_state_masks": [
+                [
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "disambiguated_instruction": [
+                "Stay close to the human"
+            ]
+        }
+    }
+}

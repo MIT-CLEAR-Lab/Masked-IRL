@@ -1,0 +1,8 @@
+env:
+  type: "frankarobot"
+  resources_dir: "../data/resources"
+  object_centers: {'HUMAN_CENTER': [-0.2, -0.6, 0.9], 'LAPTOP_CENTER': [-0.4, 0.0, 0.635]}
+  per_SG: 1000 # 1
+  horizon: 10
+  timestep: 0.5
+  real: False #True #

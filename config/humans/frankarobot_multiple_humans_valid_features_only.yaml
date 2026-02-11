@@ -1,0 +1,3315 @@
+humans:
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    - -1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
+- features:
+  - table
+  - laptop
+  - proxemics
+  - human
+  - coffee
+  feature_scaling: normalize
+  preferencer:
+    theta:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    beta: 20.0
+    f_method: boltzmann
+    s_method: luce
