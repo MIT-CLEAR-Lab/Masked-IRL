@@ -162,8 +162,8 @@ if __name__ == "__main__":
 
         # mask
         human_theta = human.theta
-        feature_mask = [1 if abs(human_theta[i]) > 0.1 else 0 for i in range(len(human_theta))]
-        params["irl"]["feature_mask"] = feature_mask
+        state_mask = [1 if abs(human_theta[i]) > 0.1 else 0 for i in range(len(human_theta))]
+        params["irl"]["state_mask"] = state_mask
 
         irl = make_irl(params["irl"], featurizer, demos, train_trajs, train_features=train_features, demo_features=demo_features)
         irl.cost_nn.state_dict()['net.0.weight'][0] = 0.0  # custom initialization

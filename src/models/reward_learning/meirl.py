@@ -18,11 +18,8 @@ class MEIRL:
             if self.featurizer.feat_scale_construct is not None:
                 self.featurizer.feat_scale_construct(all_trajs) # creates feature scaling
         self.orig_demos = np.array(demos)
-        # self.demos = self.featurizer.featurize(demos)
         self.demos = demo_features
         self.orig_trajs = np.array(all_trajs)
-        # self.all_trajs = self.featurizer.featurize(all_trajs) # minyoung - fix
-        # self.featurized_all_trajs = self.featurizer.featurize(all_trajs)
         self.train_features = train_features
         self.all_trajs = train_features
 
@@ -45,7 +42,6 @@ class MEIRL:
                 print (name, param.data)
 
     def calc_cost(self, trajs, trajs_features=None):
-        # breakpoint()
         if not torch.is_tensor(trajs):
             trajs = torch.as_tensor(trajs).to(self.device)
         if trajs_features is not None:

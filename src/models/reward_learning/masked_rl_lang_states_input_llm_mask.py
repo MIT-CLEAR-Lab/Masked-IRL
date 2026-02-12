@@ -12,9 +12,8 @@ import time
 import random
 
 from src.models.mlp import MLP
-# Import the function that converts human theta to language instructions.
 from src.utils.feature_utils import theta_to_language, theta_to_state_mask, theta_to_llm_state_mask, theta_to_reward_density
-from src.utils.eval_utils import calculate_win_rate, count_num_valid_features, count_avg_win_rate_per_num_valid_features
+from src.utils.eval_utils import count_avg_win_rate_per_num_valid_features
 
 #####################
 # Language Encoder  #
@@ -109,7 +108,6 @@ class FiLMRewardModel(nn.Module):
         super(FiLMRewardModel, self).__init__()
         self.film0 = FiLMBlock(state_dim, cond_dim)
         self.fc1 = nn.Linear(state_dim, hidden_sizes[0])
-        # self.film1 = FiLMBlock(hidden_sizes[0], cond_dim)
         layers = []
         in_dim = hidden_sizes[0]
         for h in hidden_sizes[1:]:
@@ -117,15 +115,12 @@ class FiLMRewardModel(nn.Module):
             layers.append(nn.Tanh())
             in_dim = h
         self.fc_layers = nn.Sequential(*layers)
-        # self.film_final = FiLMBlock(in_dim, cond_dim)
         self.out = nn.Linear(in_dim, 1)
     
     def forward(self, state_states, cond):
         x = self.film0(state_states, cond)
         x = F.relu(self.fc1(x))
-        # x = self.film1(x, cond)
         x = self.fc_layers(x)
-        # x = self.film_final(x, cond)
         reward = self.out(x)
         return reward
 
@@ -195,13 +190,11 @@ class MaskedRL_LLM_Mask:
         
         
         # choose one from demo_indices
-        rand_demo_idx = 0 #random.choice(demo_indices) if demo_indices is not None else None
+        rand_demo_idx = random.choice(demo_indices) if demo_indices is not None else None
         self.demo_state_masks = theta_to_llm_state_mask(demo_thetas, demo_idx=rand_demo_idx, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
         self.train_state_masks = theta_to_llm_state_mask(train_thetas, demo_idx=rand_demo_idx, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
         self.finetune_demo_state_masks = theta_to_llm_state_mask(finetune_demo_thetas, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
         self.finetune_demo_state_masks = torch.as_tensor(self.finetune_demo_state_masks).to(self.device)
-            
-
         self.demo_state_masks = torch.as_tensor(self.demo_state_masks).to(self.device)
         self.train_state_masks = torch.as_tensor(self.train_state_masks).to(self.device)
 
@@ -211,7 +204,6 @@ class MaskedRL_LLM_Mask:
         vocab_size = params["language"].get("vocab_size", 10000)
         emb_dim = params["language"].get("emb_dim", 128)
         # We want the final language embedding to have dimension equal to theta_dim.
-        # theta_dim = self.demo_thetas.shape[1]
         if encoder_choice == "simple":
             self.lang_encoder = SimpleLanguageEncoder(vocab_size, emb_dim, theta_dim).to(self.device)
         elif encoder_choice == "bert":
@@ -223,8 +215,7 @@ class MaskedRL_LLM_Mask:
 
         # For FiLM conditioning, we now use a FiLM reward network.
         self.use_state_encoder = use_state_encoder
-        # state_dim = self.demos.shape[1]
-
+        
         hidden_sizes = params.get("hidden_sizes", [128, 128, 128])
         self.lr = params["lr"]
         self.batch_size = params.get("batch_size", 64)
@@ -233,8 +224,6 @@ class MaskedRL_LLM_Mask:
         film_cond_dim = emb_dim
         self.cost_nn = FiLMRewardModel(state_dim=state_dim, cond_dim=film_cond_dim, hidden_sizes=hidden_sizes).to(self.device)
         self.cost_nn = self.cost_nn.to(torch.float64)
-        # self.optimizer = optim.Adam(self.cost_nn.parameters(), lr=params["lr"])
-        # optimize the optimizer for the language encoder as well
         self.optimizer = optim.Adam(list(self.cost_nn.parameters()) + list(self.lang_encoder.parameters()), lr=self.lr)
         self.wandb = wandb
         self.human_win_rates = human_win_rates
@@ -360,13 +349,7 @@ class MaskedRL_LLM_Mask:
                 emb = self.lang_encoder(inst).to(torch.float64)
                 emb_batch = emb.expand(N, -1)
                 lr_rewards = -self.calc_traj_cost_batch(states_tensor, emb_batch).detach().cpu().numpy()
-            # reshape into -1, 2
             lr_rewards = lr_rewards.reshape(-1, 2)
-            # Sample random pairs
-            # idx = np.random.choice(N, size=(num_samples, 2), replace=False)
-            # prefs_gt = gt_rewards[idx[:,0]] > gt_rewards[idx[:,1]]
-            # prefs_lr = lr_rewards[idx[:,0]] < lr_rewards[idx[:,1]] # reward is negative cost
-            # gt_rewards and lr_rewards are already paired, so we can directly compare them.
             prefs_gt = gt_rewards[:, 0] > gt_rewards[:, 1]
             prefs_lr = lr_rewards[:, 0] < lr_rewards[:, 1]  # reward is negative cost
             win_rates.append((np.sum(prefs_gt == prefs_lr) / (N//2)))
@@ -375,7 +358,7 @@ class MaskedRL_LLM_Mask:
         if not return_rewards:
             return win_rates, float(np.mean(win_rates))
         return win_rates, float(np.mean(win_rates)), gt_rewards_list, lr_rewards_list
-    
+
     def evaluate_regret(self, human_win_rates):
         """
         Evaluate the regret of the learned reward function.
@@ -454,7 +437,6 @@ class MaskedRL_LLM_Mask:
             with torch.no_grad():
                 emb = self.lang_encoder(inst).to(torch.float64)
                 emb_batch = emb.expand(N, -1)
-                # lr_rewards = -self.calc_traj_cost_batch(states_tensor, emb_batch).detach().cpu().numpy()
                 noisy_rewards = []
                 for _ in range(n_repeat):
                     traj_noise = np.random.normal(0, noise_level, (1, states_tensor.shape[1], states_tensor.shape[2])) * noise_mask
@@ -478,7 +460,6 @@ class MaskedRL_LLM_Mask:
         masked_losses = []
         # Retrieve batch size from params (default 10)
         self.params = self.params if hasattr(self, "params") else {}
-        # batch_size = self.params.get("batch_size", 10)
         
         num_demos = self.demos.shape[0]
         num_train = self.all_trajs.shape[0]
@@ -534,7 +515,6 @@ class MaskedRL_LLM_Mask:
                 # Compute masked loss for demo batch.
                 num_repeat = 10
                 repeated_demo = demo_batch.repeat(num_repeat, 1, 1)  # shape: (B*num_repeat, T, state_dim)
-                # demo_lang_emb_batch: shape (B, cond_dim)
                 repeated_lang = demo_lang_emb_batch.repeat(num_repeat, 1)  # shape: (B*num_repeat, cond_dim)
                 random_noise = torch.randn_like(repeated_demo) * self.masked_loss_noise  # adjust noise scale as needed
 

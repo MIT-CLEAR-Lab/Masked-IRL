@@ -12,9 +12,8 @@ import time
 import random
 
 from src.models.mlp import MLP
-# Import the function that converts human theta to language instructions.
 from src.utils.feature_utils import theta_to_language, theta_to_state_mask, theta_to_reward_density
-from src.utils.eval_utils import calculate_win_rate, count_num_valid_features, count_avg_win_rate_per_num_valid_features
+from src.utils.eval_utils import count_avg_win_rate_per_num_valid_features
 
 #####################
 # Language Encoder  #
@@ -107,9 +106,7 @@ class FiLMRewardModel(nn.Module):
         using FiLM layers.
         """
         super(FiLMRewardModel, self).__init__()
-        # self.film0 = FiLMBlock(state_dim, cond_dim)
         self.fc1 = nn.Linear(state_dim, hidden_sizes[0])
-        # self.film1 = FiLMBlock(hidden_sizes[0], cond_dim)
         layers = []
         in_dim = hidden_sizes[0]
         for h in hidden_sizes[1:]:
@@ -117,16 +114,12 @@ class FiLMRewardModel(nn.Module):
             layers.append(nn.Tanh())
             in_dim = h
         self.fc_layers = nn.Sequential(*layers)
-        # self.film_final = FiLMBlock(in_dim, cond_dim)
         self.out = nn.Linear(in_dim, 1)
     
     def forward(self, state_states, cond):
-        # x = self.film0(state_states, cond)
         x = state_states
         x = F.relu(self.fc1(x))
-        # x = self.film1(x, cond)
         x = self.fc_layers(x)
-        # x = self.film_final(x, cond)
         reward = self.out(x)
         return reward
 
@@ -184,7 +177,7 @@ class MaskedRL_No_Lang:
 
         # Convert human thetas to language instructions.
         # theta_to_language returns a list of instructions.
-        self.language_ambiguity=language_ambiguity
+        self.language_ambiguity=None
         self.demo_language_instructions = theta_to_language(demo_thetas, self.language_ambiguity)
         self.train_language_instructions = theta_to_language(train_thetas, self.language_ambiguity)
         self.demo_state_masks = theta_to_state_mask(demo_thetas, state_dim=self.state_dim)
@@ -204,7 +197,6 @@ class MaskedRL_No_Lang:
         vocab_size = params["language"].get("vocab_size", 10000)
         emb_dim = params["language"].get("emb_dim", 128)
         # We want the final language embedding to have dimension equal to theta_dim.
-        # theta_dim = self.demo_thetas.shape[1]
         if encoder_choice == "simple":
             self.lang_encoder = SimpleLanguageEncoder(vocab_size, emb_dim, theta_dim).to(self.device)
         elif encoder_choice == "bert":
@@ -216,7 +208,6 @@ class MaskedRL_No_Lang:
 
         # For FiLM conditioning, we now use a FiLM reward network.
         self.use_state_encoder = use_state_encoder
-        # state_dim = self.demos.shape[1]
         
         hidden_sizes = params.get("hidden_sizes", [128, 128, 128])
         self.lr = params["lr"]
@@ -226,8 +217,6 @@ class MaskedRL_No_Lang:
         film_cond_dim = emb_dim
         self.cost_nn = FiLMRewardModel(state_dim=state_dim, cond_dim=film_cond_dim, hidden_sizes=hidden_sizes).to(self.device)
         self.cost_nn = self.cost_nn.to(torch.float64)
-        # self.optimizer = optim.Adam(self.cost_nn.parameters(), lr=params["lr"])
-        # optimize the optimizer for the language encoder as well
         self.optimizer = optim.Adam(list(self.cost_nn.parameters()) + list(self.lang_encoder.parameters()), lr=self.lr)
         self.wandb = wandb
         self.human_win_rates = human_win_rates
@@ -353,13 +342,7 @@ class MaskedRL_No_Lang:
                 emb = self.lang_encoder(inst).to(torch.float64)
                 emb_batch = emb.expand(N, -1)
                 lr_rewards = -self.calc_traj_cost_batch(states_tensor, emb_batch).detach().cpu().numpy()
-            # reshape into -1, 2
             lr_rewards = lr_rewards.reshape(-1, 2)
-            # Sample random pairs
-            # idx = np.random.choice(N, size=(num_samples, 2), replace=False)
-            # prefs_gt = gt_rewards[idx[:,0]] > gt_rewards[idx[:,1]]
-            # prefs_lr = lr_rewards[idx[:,0]] < lr_rewards[idx[:,1]] # reward is negative cost
-            # gt_rewards and lr_rewards are already paired, so we can directly compare them.
             prefs_gt = gt_rewards[:, 0] > gt_rewards[:, 1]
             prefs_lr = lr_rewards[:, 0] < lr_rewards[:, 1]  # reward is negative cost
             win_rates.append((np.sum(prefs_gt == prefs_lr) / (N//2)))
@@ -447,7 +430,6 @@ class MaskedRL_No_Lang:
             with torch.no_grad():
                 emb = self.lang_encoder(inst).to(torch.float64)
                 emb_batch = emb.expand(N, -1)
-                # lr_rewards = -self.calc_traj_cost_batch(states_tensor, emb_batch).detach().cpu().numpy()
                 noisy_rewards = []
                 for _ in range(n_repeat):
                     traj_noise = np.random.normal(0, noise_level, (1, states_tensor.shape[1], states_tensor.shape[2])) * noise_mask
@@ -471,7 +453,6 @@ class MaskedRL_No_Lang:
         masked_losses = []
         # Retrieve batch size from params (default 10)
         self.params = self.params if hasattr(self, "params") else {}
-        # batch_size = self.params.get("batch_size", 10)
         
         num_demos = self.demos.shape[0]
         num_train = self.all_trajs.shape[0]
@@ -507,10 +488,6 @@ class MaskedRL_No_Lang:
                 train_instr_batch = [self.train_language_instructions[idx] for idx in train_indices.cpu().numpy()]
                 train_lang_emb_batch = self.lang_encoder(train_instr_batch).to(torch.float64)
                 
-                # Compute costs for the mini-batch.
-                # cost_demos = self.cost_nn(demo_batch, demo_lang_emb_batch)
-                # cost_train = self.cost_nn(train_batch, train_lang_emb_batch)
-                # cost_nn is not defined as a reward on a single state, not features of a trajectory.
                 # Compute costs for the mini-batch of demo and training trajectories.
                 cost_demos = self.calc_traj_cost_batch(demo_batch, demo_lang_emb_batch).unsqueeze(1)  # (B,)
                 cost_train = self.calc_traj_cost_batch(train_batch, train_lang_emb_batch).unsqueeze(1)  # (B,)

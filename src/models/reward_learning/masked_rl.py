@@ -26,11 +26,9 @@ class MaskedRL:
         # send all data to device
         self.demos = torch.as_tensor(self.demos).to(self.device)
         self.all_trajs = torch.as_tensor(self.all_trajs).to(self.device)
+        self.state_mask = torch.tensor(params["state_mask"]).to(self.device)
 
-        # feature mask
-        self.feature_mask = torch.tensor(params["feature_mask"]).to(self.device)
-
-        input_dim = self.demos.shape[1] #+ len(self.feature_mask)
+        input_dim = self.demos.shape[1]
         self.lr = params["lr"]
         
         if params["linear"]:
@@ -45,7 +43,6 @@ class MaskedRL:
                 print (name, param.data)
 
     def calc_cost(self, trajs, trajs_features=None):
-        # breakpoint()
         if not torch.is_tensor(trajs):
             trajs = torch.as_tensor(trajs).to(self.device)
         if trajs_features is not None:
@@ -78,14 +75,12 @@ class MaskedRL:
             maxent_loss = torch.mean(cost_demos) + torch.log(torch.mean(torch.exp(-cost_samples)/probs_samples) + torch.mean(torch.exp(-cost_demos)/probs_demos))
 
             # Masked loss
-            # we need masks
-            masks = self.feature_mask
+            masks = self.state_mask
             num_repeat = 10
             repeated_demos = self.demos.repeat(num_repeat, 1)
             # calculate perturbated demos where we add noise to masked features - the cost difference between perturbated and original demos should be minimized
-            random_noise = torch.randn_like(repeated_demos) * 1.0 #0.1
+            random_noise = torch.randn_like(repeated_demos) * 1.0
             # use 1-mask to select features to be perturbated
-            # perturbated_demos = self.demos + random_noise * (1 - masks)
             perturbated_demos = repeated_demos + random_noise * (1 - masks)
             perturbated_cost_demos = self.cost_nn(perturbated_demos)
             masked_loss = torch.mean(torch.abs(cost_demos.repeat(num_repeat, 1) - perturbated_cost_demos)) * 1

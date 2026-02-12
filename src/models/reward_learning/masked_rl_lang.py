@@ -9,7 +9,6 @@ import torch.nn as nn
 import copy
 
 from src.models.mlp import MLP
-# Import the function that converts human theta to language instructions.
 from src.utils.feature_utils import theta_to_language
 
 #####################
@@ -204,8 +203,6 @@ class MaskedRL:
         self.batch_size = params.get("batch_size", 64)
         self.cost_nn = FiLMRewardModel(state_dim=feature_dim, cond_dim=theta_dim, hidden_sizes=hidden_sizes).to(self.device)
         self.cost_nn = self.cost_nn.to(torch.float64)
-        # self.optimizer = optim.Adam(self.cost_nn.parameters(), lr=params["lr"])
-        # optimize the optimizer for the language encoder as well
         self.optimizer = optim.Adam(list(self.cost_nn.parameters()) + list(self.lang_encoder.parameters()), lr=self.lr)
 
     def tokenize_instructions(self, instructions):
@@ -247,82 +244,11 @@ class MaskedRL:
         cost = self.cost_nn(features, lang_embs)
         return cost.squeeze(1).detach().cpu().numpy()
 
-    # def train(self, iterations, save_dir=None):
-    #     losses = []
-    #     maxent_losses = []
-    #     masked_losses = []
-    #     p = tqdm.tqdm(range(iterations))
-        
-    #     # Use precomputed demo language embeddings.
-    #     # demos_concat = (self.demos, self.demo_lang_emb)  # For FiLM, pass separately.
-    #     self.cost_nn = self.cost_nn.to(torch.float64)
-    #     self.train_lang_emb = self.train_lang_emb.to(torch.float64)
-    #     self.demos = self.demos.to(torch.float64)
-    #     self.all_trajs = self.all_trajs.to(torch.float64)
-    #     self.demo_lang_emb = self.demo_lang_emb.to(torch.float64)
-
-    #     for epoch in p:
-    #         self.optimizer.zero_grad()
-
-    #         train_lang_emb = self.lang_encoder(self.train_language_instructions).to(torch.float64)
-    #         # current_costs = self.cost_nn(self.all_trajs, self.train_lang_emb).squeeze(1)
-    #         current_costs = self.cost_nn(self.all_trajs, train_lang_emb).squeeze(1)
-    #         rand_indices = torch.multinomial(F.softmax(-current_costs, dim=0), len(self.demos), replacement=True)
-    #         samples = self.all_trajs[rand_indices]
-    #         # samples_lang = self.train_lang_emb[rand_indices]
-    #         samples_lang = train_lang_emb[rand_indices]
-
-    #         demo_lang_emb = self.lang_encoder(self.demo_language_instructions).to(torch.float64)
-    #         # probs_demos = F.softmax(-self.cost_nn(self.demos, self.demo_lang_emb).squeeze(1).detach(), dim=0)
-    #         probs_demos = F.softmax(-self.cost_nn(self.demos, demo_lang_emb).squeeze(1).detach(), dim=0)
-    #         probs_samples = F.softmax(-self.cost_nn(samples, samples_lang).squeeze(1).detach(), dim=0)
-
-    #         # cost_demos = self.cost_nn(self.demos, self.demo_lang_emb)
-    #         cost_demos = self.cost_nn(self.demos, demo_lang_emb)
-    #         cost_samples = self.cost_nn(samples, samples_lang)
-
-    #         maxent_loss = torch.mean(cost_demos) + torch.log(
-    #             torch.mean(torch.exp(-cost_samples)/probs_samples) + torch.mean(torch.exp(-cost_demos)/probs_demos)
-    #         )
-
-    #         num_repeat = 10
-    #         repeated_features = self.demos.repeat(num_repeat, 1)
-    #         # repeated_lang = self.demo_lang_emb.repeat(num_repeat, 1)
-    #         repeated_lang = (demo_lang_emb).repeat(num_repeat, 1)
-    #         random_noise = torch.randn_like(repeated_features) * 0.1  # adjust noise scale as needed
-    #         perturbated_features = repeated_features + random_noise
-    #         perturbated_cost = self.cost_nn(perturbated_features, repeated_lang)
-    #         # masked_loss = torch.mean(torch.abs(self.cost_nn(self.demos, self.demo_lang_emb).repeat(num_repeat, 1) - perturbated_cost))
-    #         masked_loss = torch.mean(torch.abs(self.cost_nn(self.demos, (demo_lang_emb)).repeat(num_repeat, 1) - perturbated_cost))
-
-    #         loss = maxent_loss + masked_loss
-    #         loss.backward()
-    #         self.optimizer.step()
-
-    #         p.set_description('Epoch %d loss: %.8f' % (epoch + 1, loss.item()))
-    #         losses.append(loss.item())
-    #         maxent_losses.append(maxent_loss.item())
-    #         masked_losses.append(masked_loss.item())
-
-    #     if save_dir is not None:
-    #         if not os.path.exists(save_dir):
-    #             os.makedirs(save_dir)
-    #         torch.save(self.cost_nn, os.path.join(save_dir, 'cost_network_it{}_lr{}.pt'.format(iterations, self.lr)))
-    #         plt.plot(losses)
-    #         plt.plot(maxent_losses)
-    #         plt.plot(masked_losses)
-    #         plt.legend(['Total loss', 'MaxEnt loss', 'Masked loss'])
-    #         plt.savefig(os.path.join(save_dir, 'losses_it{}_lr{}.png'.format(iterations, self.lr)))
-    #         plt.close()
-    #     return losses
-
     def train(self, iterations, save_dir=None):
         losses = []
         maxent_losses = []
         masked_losses = []
-        # Retrieve batch size from params (default 10)
         self.params = self.params if hasattr(self, "params") else {}
-        # batch_size = self.params.get("batch_size", 10)
         
         num_demos = self.demos.shape[0]
         num_train = self.all_trajs.shape[0]
