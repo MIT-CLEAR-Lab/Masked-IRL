@@ -39,22 +39,22 @@ def theta_to_language(human_thetas, language_ambiguity=None, llm_disambiguation=
             ]
             if llm_state_mask_path is None:
                 if llm_disambiguation == "llm":
-                    llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19_llm.json"
+                    llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19_gpt5_indices_all_trajs.json"
                 elif llm_disambiguation == "vlm":
                     llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19.json"
                 else:
                     raise ValueError("llm_disambiguation should be either 'llm' or 'vlm'")
             llm_state_mask = json.load(open(llm_state_mask_path, "r"))
-            # lang_instructions = [llm_state_mask[get_theta_key(theta)]["omit_referent"]["disambiguated_instruction"][(demo_idx)] for theta in human_thetas]
             lang_instructions = []
             for theta in human_thetas:
                 theta_key = get_theta_key(theta)
-                if len(llm_state_mask[theta_key]["omit_referent"]["disambiguated_instruction"]) > 0:
-                    lang_instructions.append(llm_state_mask[theta_key]["omit_referent"]["disambiguated_instruction"][(demo_idx)])
+                if len(llm_state_mask[theta_key]["omit_referent"]["disambiguated_instructions"]) > 0:
+                    if str(demo_idx) in llm_state_mask[theta_key]["omit_referent"]["disambiguated_instructions"]:
+                        lang_instructions.append(llm_state_mask[theta_key]["omit_referent"]["disambiguated_instructions"][str(demo_idx)])
+                    else:
+                        lang_instructions.append(random.choice(random.choice(list(llm_state_mask[theta_key]["omit_referent"]["disambiguated_instructions"].values()))))
                 else:
                     print("USED AMBIGUOUS INSTRUCTION FOR THETA KEY:", theta_key)
-                    # just use ambiguous language if disambiguated instruction is not available
-                    # lang_instructions.append(ambiguous_llm_state_mask[theta_key]["omit_referent"]["ambiguous_instruction"])
                     instruction = ""
                     for i, feature_instr in enumerate(ambiguous_instructions_template):
                         if abs(theta[i]) == 1: # later, we can make this to float
@@ -74,21 +74,21 @@ def theta_to_language(human_thetas, language_ambiguity=None, llm_disambiguation=
             ]
             if llm_state_mask_path is None:
                 if llm_disambiguation == "llm":
-                    llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19_llm.json"
+                    llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19_gpt5_indices_all_trajs.json"
                 elif llm_disambiguation == "vlm":
                     llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19.json"
                 else:
                     raise ValueError("llm_disambiguation should be either 'llm' or 'vlm'")
             llm_state_mask = json.load(open(llm_state_mask_path, "r"))
-            # lang_instructions = [llm_state_mask[get_theta_key(theta)]["omit_expression"]["disambiguated_instruction"][(demo_idx)] for theta in human_thetas]
             lang_instructions = []
             for theta in human_thetas:
                 theta_key = get_theta_key(theta)
-                if len(llm_state_mask[theta_key]["omit_expression"]["disambiguated_instruction"]) > 0:
-                    lang_instructions.append(llm_state_mask[theta_key]["omit_expression"]["disambiguated_instruction"][(demo_idx)])
+                if len(llm_state_mask[theta_key]["omit_expression"]["disambiguated_instructions"]) > 0:
+                    if str(demo_idx) in llm_state_mask[theta_key]["omit_expression"]["disambiguated_instructions"]:
+                        lang_instructions.append(llm_state_mask[theta_key]["omit_expression"]["disambiguated_instructions"][str(demo_idx)])
+                    else:
+                        lang_instructions.append(random.choice(random.choice(list(llm_state_mask[theta_key]["omit_expression"]["disambiguated_instructions"].values()))))
                 else:
-                    # just use ambiguous language if disambiguated instruction is not available
-                    # lang_instructions.append(ambiguous_llm_state_mask[theta_key]["omit_expression"]["ambiguous_instruction"])
                     print("USED AMBIGUOUS INSTRUCTION FOR THETA KEY:", theta_key)
                     instruction = ""
                     for i, feature_instr in enumerate(ambiguous_instructions_template):
@@ -255,7 +255,7 @@ def theta_to_state_mask(thetas, threshold=0.1, state_dim=9):
     
     return np.array(masks)
 
-def theta_to_llm_state_mask(thetas, language_ambiguity=None, demo_idx=0, state_dim=9, llm_state_mask_path=None, llm_disambiguation=False):
+def theta_to_llm_state_mask(thetas, language_ambiguity=None, demo_idx=0, state_dim=9, llm_state_mask_path=None, llm_disambiguation=False, rand_demo_indices=None):
     # Ensure thetas is a numpy array.
     thetas = np.array(thetas)
 
@@ -269,43 +269,40 @@ def theta_to_llm_state_mask(thetas, language_ambiguity=None, demo_idx=0, state_d
             ambiguous_llm_state_mask = json.load(f)
         if llm_state_mask_path is None:
             if llm_disambiguation == "llm":
-                llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19_llm.json"
+                llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19_gpt5_indices_all_trajs.json"
             elif llm_disambiguation == "vlm":
                 llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19.json"
             else:
                 raise ValueError("llm_disambiguation should be either 'llm' or 'vlm'")
         if language_ambiguity == "omit_referent":
-            # use the disambiguated omit referent instruction to predict mask
-            
             with open(llm_state_mask_path, "r") as f:
                 llm_state_mask = json.load(f)
             masks = []
-            # masks = [llm_state_mask[get_theta_key(theta)]["omit_referent"]["pred_state_masks"][(demo_idx)] for theta in thetas]
-            for theta in thetas:
+            for i, theta in enumerate(thetas):
                 theta_key = get_theta_key(theta)
                 if len(llm_state_mask[theta_key]["omit_referent"]["pred_state_masks"]) > 0:
-                    masks.append(llm_state_mask[theta_key]["omit_referent"]["pred_state_masks"][(demo_idx)])
+                    if str(demo_idx) in llm_state_mask[theta_key]["omit_referent"]["pred_state_masks"]:
+                        masks.append(llm_state_mask[theta_key]["omit_referent"]["pred_state_masks"][str(demo_idx)][rand_demo_indices[i]])
+                    else:
+                        masks.append(random.choice(random.choice(list(llm_state_mask[theta_key]["omit_referent"]["pred_state_masks"].values()))))
                 else:
-                    # just use ambiguous language mask if disambiguated mask is not available
                     masks.append(ambiguous_llm_state_mask[theta_key]["omit_referent"]["pred_state_mask"])
-                    
+
         elif language_ambiguity == "omit_expression":
-            # use the disambiguated omit expression instruction to predict mask
-            llm_state_mask_path = "../config/data_split_config/theta_to_language_and_mask_sdim19.json"
             with open(llm_state_mask_path, "r") as f:
                 llm_state_mask = json.load(f)
-            # masks = [llm_state_mask[get_theta_key(theta)]["omit_expression"]["pred_state_masks"][(demo_idx)] for theta in thetas]
             masks = []
-            for theta in thetas:
+            for i, theta in enumerate(thetas):
                 theta_key = get_theta_key(theta)
                 if len(llm_state_mask[theta_key]["omit_expression"]["pred_state_masks"]) > 0:
-                    masks.append(llm_state_mask[theta_key]["omit_expression"]["pred_state_masks"][(demo_idx)])
+                    if str(demo_idx) in llm_state_mask[theta_key]["omit_expression"]["pred_state_masks"]:
+                        masks.append(llm_state_mask[theta_key]["omit_expression"]["pred_state_masks"][str(demo_idx)][rand_demo_indices[i]])
+                    else:
+                        masks.append(random.choice(random.choice(list(llm_state_mask[theta_key]["omit_expression"]["pred_state_masks"].values()))))
                 else:
-                    # just use ambiguous language mask if disambiguated mask is not available
                     masks.append(ambiguous_llm_state_mask[theta_key]["omit_expression"]["pred_state_mask"])
         else:
             raise ValueError("llm_disambiguation is True but language_ambiguity is not recognized")
-        # raise NotImplementedError("llm_disambiguation is not implemented for theta_to_llm_state_mask")
     else:
         if language_ambiguity is None:
             # clear instruction

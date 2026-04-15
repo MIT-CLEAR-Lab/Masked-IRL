@@ -184,6 +184,7 @@ if __name__ == "__main__":
     agg_demos = []
     agg_demo_features = []
     agg_demo_indices = []
+    agg_demo_indices_from_all = []  # Indices in all_trajs (for language ambiguity experiments)
     agg_demo_states = []
     agg_demo_thetas = []
     agg_train_trajs = []
@@ -192,6 +193,14 @@ if __name__ == "__main__":
     agg_train_thetas = []
     human_win_rates = []
     seen_theta_human_win_rates = []
+    
+    # Load split indices for mapping train_trajs indices to all_trajs indices
+    split_indices = None
+    if not args.multiple_objs:
+        indices_file = os.path.join(params["irl"]["data_split_config_path"], "split_indices.json")
+        if os.path.exists(indices_file):
+            with open(indices_file, "r") as f:
+                split_indices = json.load(f)
     
     # Load split information if needed
     if args.split_mode == 'theta_keys':
@@ -303,11 +312,20 @@ if __name__ == "__main__":
                 demo_thetas = [human_theta for _ in range(len(demos))]
                 train_thetas = [human_theta for _ in range(len(train_trajs))]
                 
+                # Calculate demo_indices_from_all for language ambiguity experiments
+                # Map from train_trajs indices to all_trajs indices
+                if split_indices is not None:
+                    demo_indices_from_all = [split_indices["train_indices"][demo_idx] for demo_idx in demo_indices]
+                else:
+                    demo_indices_from_all = None
+                
                 agg_demos.extend(demos)
                 agg_demo_features.extend(demo_feats)
                 agg_demo_states.extend(demo_states)
                 agg_demo_thetas.extend(demo_thetas)
                 agg_demo_indices.extend(demo_indices)
+                if demo_indices_from_all is not None:
+                    agg_demo_indices_from_all.extend(demo_indices_from_all)
                 agg_train_trajs.extend(train_trajs)
                 agg_train_features.extend(train_feats)
                 agg_train_states.extend(train_states)
@@ -418,6 +436,7 @@ if __name__ == "__main__":
                       test_states=preprocessed_traj_data.get("test_states"),
                       omit_referent=params["irl"].get("omit_referent", False),
                       omit_expression=params["irl"].get("omit_expression", False),
+                      demo_indices_from_all=np.array(agg_demo_indices_from_all) if agg_demo_indices_from_all else None,
                       )
     
     # Train

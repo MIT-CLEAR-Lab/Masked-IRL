@@ -404,7 +404,7 @@ if __name__ == "__main__":
         if args.realrobot:
             wandb.init(project='Masked-IRL-realrobot', config=params, name=wandb_run_name, reinit=True)
         else:
-            wandb.init(project='Masked-IRL-finetune-sdim19-0908-language-ambiguity-3train-3test', config=params, name=wandb_run_name, reinit=True)
+            wandb.init(project='Masked-IRL-simulation', config=params, name=wandb_run_name, reinit=True)
         wandb.config.update({
             "seed": args.seed,
             "test_seed": args.test_seed,

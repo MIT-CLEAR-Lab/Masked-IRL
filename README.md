@@ -5,7 +5,7 @@ Official codebase for **Masked Inverse Reinforcement Learning (Masked IRL)**, a 
 **Accepted to ICRA 2026**
 
 **Paper**: [arXiv:2511.14565](https://arxiv.org/abs/2511.14565v1)  
-**Project Page**: https://github.com/MIT-CLEAR-Lab/Masked-IRL
+**Project Page**: https://mit-clear-lab.github.io/Masked-IRL/
 
 ## Overview
 
@@ -30,6 +30,7 @@ conda activate maskedirl
 ```bash
 pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu124
 ```
+Install cuda toolkit 12.4 with `conda install -c nvidia cuda-toolkit=12.4` or install different version of PyTorch that matches your cuda version.
 
 3. Install remaining dependencies:
 ```bash
@@ -56,14 +57,15 @@ To generate new trajectory datasets:
 
 ```bash
 # For simulation (set real: False in config)
-PYTHONPATH=. python src/scripts/generate_traj_sets.py \
-    --config config/trajset_gen/frankarobot.yaml \
+cd src
+python scripts/generate_traj_sets.py \
+    --config ../config/trajset_gen/frankarobot.yaml \
     --samples 10000 \
     --seed 12345
 
 # For real robot (set real: True in config to use GUI)
-PYTHONPATH=. python src/scripts/generate_traj_sets.py \
-    --config config/trajset_gen/frankarobot.yaml \
+python scripts/generate_traj_sets.py \
+    --config ../config/trajset_gen/frankarobot.yaml \
     --samples 1000 \
     --seed 12345
 ```
@@ -73,12 +75,13 @@ PYTHONPATH=. python src/scripts/generate_traj_sets.py \
 To generate trajectories with varying object locations:
 
 ```bash
-PYTHONPATH=. python src/scripts/generate_trajs_obj_multiple_locations.py \
-    --config config/trajset_gen/frankarobot.yaml \
+cd src
+python scripts/generate_trajs_obj_multiple_locations.py \
+    --config ../config/trajset_gen/frankarobot.yaml \
     --num_obj_locations 20 \
     --samples 50 \
     --seed 0 \
-    --save_dir ./data/traj_sets \
+    --save_dir ../data/traj_sets \
     --tag obj20_sg50_persg5
 ```
 
@@ -112,12 +115,13 @@ Train Masked IRL on simulation data (default mode):
 
 ```bash
 # Direct Python execution
-python src/scripts/train.py \
+cd src
+python scripts/train.py \
     --seed 12345 \
-    --config config/reward_learning/obj20_sg10_persg5/maskedrl_llm_mask.yaml \
-    -hc config/humans/frankarobot_multiple_humans.yaml \
+    --config ../config/reward_learning/obj20_sg10_persg5/maskedrl_llm_mask.yaml \
+    -hc ../config/humans/frankarobot_multiple_humans.yaml \
     -dq 10 \
-    --num_train_thetas 34 \
+    --num_train_thetas 40 \
     --state_dim 19 \
     --lr 0.0001 \
     --batch_size 128 \
@@ -170,11 +174,12 @@ Train Masked IRL on real robot data using the `--realrobot` flag:
 
 ```bash
 # Direct Python execution
-python src/scripts/train.py \
+cd src
+python scripts/train.py \
     --realrobot \
     --seed 12345 \
-    --config config/reward_learning/realrobot/maskedrl_llm_mask.yaml \
-    -hc config/humans/frankarobot_multiple_humans_validfeat1and2.yaml \
+    --config ../config/reward_learning/realrobot/maskedrl_llm_mask.yaml \
+    -hc ../config/humans/frankarobot_multiple_humans_validfeat1and2.yaml \
     -dq 10 \
     --num_train_thetas 34 \
     --state_dim 19 \
@@ -261,14 +266,14 @@ The unified `eval.py` script supports both simulation and real robot evaluation:
 
 ```bash
 # Evaluate on simulation (default)
-python src/scripts/eval.py \
+python scripts/eval.py \
     --seed 12345 \
     --config config/reward_learning/obj20_sg10_persg5/maskedrl_llm_mask.yaml \
     -hc config/humans/frankarobot_multiple_humans.yaml \
     -dq 10
 
 # Evaluate on real robot
-python src/scripts/eval.py \
+python scripts/eval.py \
     --realrobot \
     --seed 12345 \
     --config config/reward_learning/realrobot/maskedrl_llm_mask.yaml \
@@ -300,8 +305,8 @@ bash src/scripts/eval.sh \
 Visualize trajectories:
 
 ```bash
-python src/scripts/visualize_trajs.py \
-    --traj-path data/traj_sets/frankarobot_obj20_sg10_persg5.npy
+python scripts/visualize_trajs.py \
+    --traj-path ../data/traj_sets/frankarobot_obj20_sg10_persg5.npy
 ```
 
 ## Simulation vs Real Robot

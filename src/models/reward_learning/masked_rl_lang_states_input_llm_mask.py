@@ -136,6 +136,7 @@ class MaskedRL_LLM_Mask:
                  omit_referent=False, omit_expression=False, use_state_encoder=False, 
                  unseen_humans=None, finetune_demo_features=None, finetune_demo_states=None, finetune_demo_thetas=None,
                  llm_state_mask_path=None, language_ambiguity=None, llm_disambiguation=False,
+                 demo_indices_from_all=None, train_indices_from_all=None, finetune_demo_indices_from_all=None,
                  **kwargs):
         """
         Reward model conditioned on language embeddings derived from human thetas.
@@ -183,17 +184,17 @@ class MaskedRL_LLM_Mask:
         self.language_ambiguity=language_ambiguity
         self.llm_disambiguation = llm_disambiguation
         self.llm_state_mask_path = llm_state_mask_path
-        self.demo_language_instructions = theta_to_language(demo_thetas, self.language_ambiguity, llm_disambiguation=self.llm_disambiguation, llm_state_mask_path=self.llm_state_mask_path)
+        self.demo_language_instructions = theta_to_language(demo_thetas, self.language_ambiguity, llm_disambiguation=self.llm_disambiguation, llm_state_mask_path=self.llm_state_mask_path, demo_idx=demo_indices_from_all)
         self.train_language_instructions = theta_to_language(train_thetas, self.language_ambiguity, llm_disambiguation=self.llm_disambiguation, llm_state_mask_path=self.llm_state_mask_path)
         self.finetune_demo_language_instructions = theta_to_language(finetune_demo_thetas, self.language_ambiguity, llm_disambiguation=self.llm_disambiguation, llm_state_mask_path=self.llm_state_mask_path)
 
         
         
-        # choose one from demo_indices
-        rand_demo_idx = random.choice(demo_indices) if demo_indices is not None else None
-        self.demo_state_masks = theta_to_llm_state_mask(demo_thetas, demo_idx=rand_demo_idx, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
-        self.train_state_masks = theta_to_llm_state_mask(train_thetas, demo_idx=rand_demo_idx, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
-        self.finetune_demo_state_masks = theta_to_llm_state_mask(finetune_demo_thetas, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
+        # choose len(demo_indices) number of random binary values
+        rand_demo_indices = [random.choice([0,1]) for _ in range(len(demo_indices))] if demo_indices is not None else None
+        self.demo_state_masks = theta_to_llm_state_mask(demo_thetas, demo_idx=demo_indices_from_all, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation, rand_demo_indices=rand_demo_indices)
+        self.train_state_masks = theta_to_llm_state_mask(train_thetas, demo_idx=train_indices_from_all, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
+        self.finetune_demo_state_masks = theta_to_llm_state_mask(finetune_demo_thetas, demo_idx=finetune_demo_indices_from_all, state_dim=self.state_dim, llm_state_mask_path=self.llm_state_mask_path, language_ambiguity=self.language_ambiguity, llm_disambiguation=self.llm_disambiguation)
         self.finetune_demo_state_masks = torch.as_tensor(self.finetune_demo_state_masks).to(self.device)
         self.demo_state_masks = torch.as_tensor(self.demo_state_masks).to(self.device)
         self.train_state_masks = torch.as_tensor(self.train_state_masks).to(self.device)
