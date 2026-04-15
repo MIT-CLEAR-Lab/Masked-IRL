@@ -187,7 +187,7 @@ class MEIRL_Lang:
         encoder_choice = params["language_encoder"] if "language_encoder" in params else "simple"
         vocab_size = params["language"].get("vocab_size", 10000)
         emb_dim = params["language"].get("emb_dim", 128)
-        # We want the final language embedding to have dimension equal to theta_dim.
+        theta_dim = self.demo_thetas.shape[1]
         if encoder_choice == "simple":
             self.lang_encoder = SimpleLanguageEncoder(vocab_size, emb_dim, theta_dim).to(self.device)
         elif encoder_choice == "bert":
@@ -219,7 +219,7 @@ class MEIRL_Lang:
         self.finetune_demo_thetas = finetune_demo_thetas
         self.unseen_humans = unseen_humans
         self.save_path = save_path
-        if self.wandb:
+        if self.save_path is not None:
             if not os.path.exists(self.save_path):
                 os.makedirs(self.save_path)
             self.last_ckpt = os.path.join(self.save_path, 'irl_last.pt')
@@ -592,7 +592,7 @@ class MEIRL_Lang:
         if save_loss:
             plt.plot(losses)
             plt.legend(['Total loss', 'MaxEnt loss', 'Masked loss'])
-            plt.savefig(os.path.join(save_dir, 'losses_it{}_lr{}.png'.format(iterations, self.lr)))
+            plt.savefig(os.path.join(self.save_path, 'losses_it{}_lr{}.png'.format(iterations, self.lr)))
             plt.close()
         return losses
     

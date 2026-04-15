@@ -127,13 +127,14 @@ class FiLMRewardModel(nn.Module):
 # MaskedRL: Main Class       #
 ##############################
 class MaskedRL_No_Lang:
-    def __init__(self, params, featurizer, demos, all_trajs, 
+    def __init__(self, params, featurizer, demos, all_trajs,
                  train_states=None, demo_states=None, demo_indices=None,
-                 demo_thetas=None, train_thetas=None, wandb=False, human_win_rates=None, seen_theta_human_win_rates=None, 
+                 demo_thetas=None, train_thetas=None, wandb=False, human_win_rates=None, seen_theta_human_win_rates=None,
                  test_trajs=None, save_path=None,
                  test_features=None, test_states=None, demo_masks=None,
-                 omit_referent=False, omit_expression=False, use_state_encoder=False, 
-                 unseen_humans=None, finetune_demo_features=None, finetune_demo_states=None, finetune_demo_thetas=None):
+                 omit_referent=False, omit_expression=False, use_state_encoder=False,
+                 unseen_humans=None, finetune_demo_features=None, finetune_demo_states=None, finetune_demo_thetas=None,
+                 **kwargs):
         """
         Reward model conditioned on language embeddings derived from human thetas.
         
@@ -196,7 +197,7 @@ class MaskedRL_No_Lang:
         encoder_choice = params["language_encoder"] if "language_encoder" in params else "simple"
         vocab_size = params["language"].get("vocab_size", 10000)
         emb_dim = params["language"].get("emb_dim", 128)
-        # We want the final language embedding to have dimension equal to theta_dim.
+        theta_dim = self.demo_thetas.shape[1]
         if encoder_choice == "simple":
             self.lang_encoder = SimpleLanguageEncoder(vocab_size, emb_dim, theta_dim).to(self.device)
         elif encoder_choice == "bert":
@@ -228,7 +229,7 @@ class MaskedRL_No_Lang:
         self.finetune_demo_thetas = finetune_demo_thetas
         self.unseen_humans = unseen_humans
         self.save_path = save_path
-        if self.wandb:
+        if self.save_path is not None:
             if not os.path.exists(self.save_path):
                 os.makedirs(self.save_path)
             self.last_ckpt = os.path.join(self.save_path, 'irl_last.pt')
@@ -647,7 +648,7 @@ class MaskedRL_No_Lang:
             plt.plot(maxent_losses)
             plt.plot(masked_losses)
             plt.legend(['Total loss', 'MaxEnt loss', 'Masked loss'])
-            plt.savefig(os.path.join(save_dir, 'losses_it{}_lr{}.png'.format(iterations, self.lr)))
+            plt.savefig(os.path.join(self.save_path, 'losses_it{}_lr{}.png'.format(iterations, self.lr)))
             plt.close()
         return losses
     
