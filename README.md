@@ -105,6 +105,29 @@ Data split configurations are stored in `config/data_split_config/`:
 - `frankarobot_obj20_sg10_persg5/` - Simulation data splits
 - `frankarobot_real/` - Real robot data splits
 
+## Language Preprocessing
+
+The notebooks in `notebooks/` produce the JSON artifacts that `train.py` consumes when
+`--language_ambiguity` or `--llm_disambiguation` are set. They all call the OpenAI API, so either export
+`OPENAI_API_KEY` or place the key in `~/.openai_api_key`.
+
+- `notebooks/language_paraphrase_processing.ipynb` - Paraphrase each theta's base instruction with
+  `gpt-4o-mini` at `temperature=0.7`. Writes `language_paraphrased_temp0.7_{seed}_{ts}.json` into the data
+  split config directory; consumed via `--language_ambiguity paraphrase` at training time.
+- `notebooks/language_disambiguation_processing.ipynb` - LLM-only disambiguation. For each human and each
+  ambiguity type (`omit_referent`, `omit_expression`), it formats the demo trajectory as a state table and
+  asks `gpt-4o-mini` to rewrite the ambiguous instruction into 1-2 clear directives. Writes
+  `language_disambiguated_temp{t}_{seed}_{ts}.json`.
+- `notebooks/language_disambiguation_processing_vlm.ipynb` - VLM disambiguation variant. Same loop, but the
+  disambiguator sees trajectory-viz images (set `traj_image_folder` to a local viz directory, or fill in
+  `traj_image_url_template` with a hosted URL pattern containing `{demo_idx}` and `{view}`) and uses
+  `gpt-4o`. Writes `language_disambiguated_vlm_temp{t}_{seed}_{ts}.json`.
+- `notebooks/state_mask_prediction.ipynb` - Map clear instructions to a 19-D binary state mask over
+  `[eef_xyz (0-2), eef_rot 3x3 (3-11), human_xyz (12-14), laptop_xyz (15-17), table_height (18)]`. Toggle
+  `use_trajectory` to condition on a demonstration. Writes
+  `state_mask_pred_{text|traj}_sdim19_{seed}_{ts}.json` and reports accuracy against the GT mask from
+  `theta_to_state_mask`.
+
 ## Training
 
 The codebase uses unified training scripts that support both simulation and real robot experiments. Use the `--realrobot` flag to switch between modes.
@@ -346,6 +369,7 @@ Masked-IRL/
 │   │   └── reward_learning/  # Reward learning models
 │   ├── scripts/           # Training and evaluation scripts
 │   └── utils/            # Utility functions
+├── notebooks/             # Language preprocessing + trajectory inspection notebooks
 ├── scripts/               # Additional utility scripts
 └── requirements.txt       # Python dependencies
 ```
